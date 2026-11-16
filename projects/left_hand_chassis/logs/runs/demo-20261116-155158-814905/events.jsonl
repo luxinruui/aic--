@@ -1,0 +1,32 @@
+{"at": "2026-11-16T15:51:58.874603+08:00", "event": "start", "source": "demo"}
+{"at": "2026-11-16T15:51:58.875606+08:00", "event": "calibrated", "source": "demo"}
+{"at": "2026-11-16T15:51:58.983936+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "回到校准静止位并稳定保持0.4秒"}
+{"at": "2026-11-16T15:51:59.376231+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:52:00.824212+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:52:05.852428+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:52:10.813216+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:52:14.829151+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:52:19.839393+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:52:22.834597+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:24.864340+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:28.850433+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:33.869486+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:38.874452+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:42.869900+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:47.862080+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:52.861531+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:52:56.855868+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:01.847322+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:06.826045+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:10.870163+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:15.840458+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:20.863149+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:24.852674+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:29.813989+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:34.840938+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:38.874920+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:43.828775+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:48.872994+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:52.871726+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "空格暂停"}
+{"at": "2026-11-16T15:53:55.339461+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "输入改变，请重新校准"}
+{"at": "2026-11-16T15:53:55.339461+08:00", "event": "stop", "reason": "输入关闭/切换"}

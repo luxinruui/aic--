@@ -1,0 +1,35 @@
+{
+  "neutral": {
+    "fingers": [
+      1.05,
+      0.6,
+      0.6,
+      0.6,
+      0.6
+    ],
+    "roll_deg": 0,
+    "source": "demo"
+  },
+  "fist": {
+    "fingers": [
+      0.55,
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "roll_deg": 0,
+    "source": "demo"
+  },
+  "opened": {
+    "fingers": [
+      1.55,
+      0.96,
+      0.96,
+      0.96,
+      0.96
+    ],
+    "roll_deg": 0,
+    "source": "demo"
+  }
+}

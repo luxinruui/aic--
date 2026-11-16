@@ -1,0 +1,11 @@
+# Python 3.10-3.12. This release bundles both hand models in its wheel.
+mediapipe==0.10.21
+opencv-contrib-python==4.11.0.86
+numpy==1.26.4
+Pillow==11.3.0
+# Bound MediaPipe's transitive dependencies for reproducible Python 3.10-3.12 setup.
+jax==0.4.35
+jaxlib==0.4.35
+scipy==1.14.1
+matplotlib==3.9.4
+protobuf==4.25.9

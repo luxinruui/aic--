@@ -1,0 +1,12 @@
+{
+  "camera": 0,
+  "frames": 30,
+  "unique_frames": 30,
+  "valid_left_frames": 0,
+  "max_delivery_age_ms": 47.0,
+  "worker_released": true,
+  "failure": null,
+  "images_saved": false,
+  "robot_connected": false,
+  "scope": "Host camera open/read/mirrored MediaPipe pipeline only; human calibration and gesture accuracy remain unverified."
+}

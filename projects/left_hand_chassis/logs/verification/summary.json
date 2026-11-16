@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "version": "1.0.0",
+  "unit_tests": {"count": 26, "passed": true},
+  "model_blank_inference": "passed",
+  "windows_cmd_synthetic_lifecycle": "passed",
+  "tk_pillow_smoke": "passed",
+  "native_window_visual_check": "passed; 150-percent scale; calibration/status/output visible",
+  "native_space_stop": "passed; forward=0,yaw_left=0,OFF",
+  "camera_pipeline": {"camera": 0, "unique_frames": 30, "valid_left_frames": 0, "max_delivery_age_ms": 47.0, "released": true},
+  "human_calibration_and_gesture_accuracy": "pending user validation",
+  "robot_connection": false,
+  "real_camera_images_saved": false,
+  "source_environments_modified": false
+}

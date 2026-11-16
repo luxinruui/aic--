@@ -1,0 +1,10 @@
+AIC left-hand chassis PC startup 2026-11-16T15:53:02.320880+08:00
+[1/4] Finding a supported Python...
+Using Python 3.10 (64 bit): <existing-compatible-python>
+[2/4] Using the configured existing environment without changes.
+[3/4] Dependencies already match; no installation needed.
+[4/4] Opening left-hand chassis preview...
+$ <existing-compatible-python> -u -m left_hand_drive --headless --demo
+Synthetic lifecycle passed: backward, forward, left, right + stale-input STOP
+Numeric run log: logs\runs\validation-demo-20261116-155303-156275
+Process exit code: 0

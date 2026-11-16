@@ -1,0 +1,9 @@
+{"at": "2026-11-16T15:53:03.202589+08:00", "event": "start", "source": "validation-demo"}
+{"at": "2026-11-16T15:53:03.203669+08:00", "event": "calibrated", "source": "demo"}
+{"at": "2026-11-16T15:53:03.203669+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "回到校准静止位并稳定保持0.4秒"}
+{"at": "2026-11-16T15:53:03.204678+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:53:03.204678+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:53:03.206674+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:53:03.208676+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T15:53:03.209677+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "没有新鲜左手采样，已暂停"}
+{"at": "2026-11-16T15:53:03.209677+08:00", "event": "stop", "reason": "synthetic validation completed"}

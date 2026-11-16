@@ -27,3 +27,18 @@ jobs:
         run: xvfb-run -a python scripts/gui_smoke.py
       - if: runner.os == 'Windows'
         run: python scripts/gui_smoke.py
+      - name: Test left-hand chassis controller
+        working-directory: projects/left_hand_chassis
+        run: python -m unittest discover -s tests -v
+      - name: Check left-hand chassis model
+        working-directory: projects/left_hand_chassis
+        run: python -m left_hand_drive --check
+      - name: Validate left-hand chassis lifecycle
+        working-directory: projects/left_hand_chassis
+        run: python -m left_hand_drive --headless --demo
+      - if: runner.os == 'Linux'
+        working-directory: projects/left_hand_chassis
+        run: xvfb-run -a python scripts/gui_smoke.py
+      - if: runner.os == 'Windows'
+        working-directory: projects/left_hand_chassis
+        run: python scripts/gui_smoke.py

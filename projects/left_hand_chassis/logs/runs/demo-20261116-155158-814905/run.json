@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "source": "demo",
+  "started_at": "2026-11-16T15:51:58.817910+08:00",
+  "platform": "Windows",
+  "python": "3.10.22",
+  "hardware_connected": false,
+  "image_recording": false,
+  "rows": 899,
+  "ended_at": "2026-11-16T15:53:55.339461+08:00",
+  "ended_reason": "输入关闭/切换"
+}

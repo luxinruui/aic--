@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "source": "validation-demo",
+  "started_at": "2026-11-16T15:53:03.158277+08:00",
+  "platform": "Windows",
+  "python": "3.10.22",
+  "hardware_connected": false,
+  "image_recording": false,
+  "rows": 141,
+  "ended_at": "2026-11-16T15:53:03.209677+08:00",
+  "ended_reason": "synthetic validation completed"
+}
