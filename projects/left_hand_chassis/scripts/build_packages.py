@@ -62,6 +62,8 @@ def main():
               or p.relative_to(PROJECT).as_posix() in direct
               or p.relative_to(PROJECT).as_posix() in ("docs/ROBOT_PROTOCOL.md", "logs/development/2026-11-16-robot-link.md",
                   "logs/development/2026-11-16-deployment.md",
+                  "logs/verification/deployment_live_acceptance_20261116.json",
+                  "logs/verification/rotation60_off_20261117.json",
                   "logs/verification/robot_link_summary.json","logs/verification/robot_link_tests_20261116.txt")]
     # A package-specific inventory avoids suggesting that omitted PC files exist.
     inventory=PROJECT/"backpack_manifest.json"
@@ -80,9 +82,15 @@ def main():
     board_manifest.write_bytes(json.dumps(dict(version="1.2.0",files=[info(p) for p in board]),ensure_ascii=False,indent=2).encode("utf-8"))
     board.append(board_manifest)
     files.append(board_manifest)
+    validation_record="logs/verification/deployment_live_acceptance_20261116.json"
+    validation_path=PROJECT/validation_record
+    hardware_validation=(json.loads(validation_path.read_text(encoding="utf-8"))["user_observed"]
+                         if validation_path.is_file() else {})
     m=PROJECT/"release_manifest.json"
     m.write_bytes(json.dumps(dict(version="1.2.0",date="2026-11-16",python_syntax_files=len(python),
-        real_hardware_tested=False,files=[info(p) for p in files]),ensure_ascii=False,indent=2).encode("utf-8"))
+        real_hardware_tested=any(value=="passed" for value in hardware_validation.values()),
+        hardware_validation_record=validation_record,hardware_validation=hardware_validation,
+        files=[info(p) for p in files]),ensure_ascii=False,indent=2).encode("utf-8"))
     files.append(m)
     result=dict(pc=package("left_hand_chassis_robot_v1_2_20261116.zip","left_hand_chassis",files),
                 backpack=package("left_hand_chassis_backpack_v1_2_20261116.zip","aic_left_hand_chassis",backpack),

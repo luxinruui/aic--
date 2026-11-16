@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-17T00:07:34.278249+08:00",
+  "check": "off_only_connection",
+  "expected": "hardware",
+  "profile": "0a52b14a2e8b5179c73551c6549c2d5e864272282fc398186cb6b270fc50fd99",
+  "success": true,
+  "nonzero_sent": false,
+  "ack_seq": 87,
+  "states": [
+    "DISARMED"
+  ]
+}

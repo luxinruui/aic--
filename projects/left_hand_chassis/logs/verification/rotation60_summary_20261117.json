@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "profile": "0a52b14a2e8b5179c73551c6549c2d5e864272282fc398186cb6b270fc50fd99",
+  "configuration": {"max_translation": 20, "max_rotation": 60, "translation_acceleration": 40, "rotation_acceleration": 120, "duration_ms": 150},
+  "pc_tests": {"count": 27, "passed": true, "seconds": 0.119},
+  "backpack_tests": {"count": 30, "passed": true, "seconds": 5.721, "interfaces": "FakeSerial and local TCP only; observed before remote parameter update"},
+  "mlk_tests": {"count": 15, "passed": true, "seconds": 5.708, "interfaces": "local TCP and simulated execution only"},
+  "gui_smoke": "passed; hidden real Tk plus local TCP PREVIEW; default turn gain 100%, dialog and STOP; no UART/camera",
+  "field_deployment": "remote JSON read back and hardware receiver restarted; PC reconnected without losing calibration",
+  "hardware_off_check": "passed, 87 ACK, no nonzero commands; rotation60_off_20261117.json",
+  "physical_acceptance_record": "deployment_live_acceptance_20261116.json",
+  "new_speed_and_combined_turning": "passed; user confirmed rotation speed suitable and forward/backward can both turn",
+  "final_pc_state": "manual pause recorded at 2026-11-17T00:15:45.255825+08:00; OFF with zero targets",
+  "remaining_field_observation": "Occasional 150ms PC snapshot / data timeout pauses recorded; protection retained. No measured angular speed or braking distance."
+}

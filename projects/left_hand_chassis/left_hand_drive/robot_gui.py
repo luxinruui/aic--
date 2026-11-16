@@ -18,6 +18,9 @@ class RobotApp(App):
         self.last_network_log = None
         self.robot_config = load(Path(project) / "robot_config.json")
         super().__init__(root, project, demo, camera)
+        # Hardware yaw uses its own stronger range; the backpack caps and ramps it.
+        self.turn_gain.set(100)
+        self.gains_changed()
         root.title("左手底盘控制 · 机器人接入 v1.2")
         self.mode_label.configure(text="未连接背包")
         ttk.Button(self.toolbar, text="连接机器人…", command=self.connection_dialog).pack(side="right", padx=8)

@@ -1,0 +1,1 @@
+Robot Tk controls, connection dialog, TCP PREVIEW feedback and STOP passed; synthetic data only; no UART/camera.

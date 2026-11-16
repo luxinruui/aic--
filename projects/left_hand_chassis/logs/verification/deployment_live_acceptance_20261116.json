@@ -1,0 +1,88 @@
+{
+  "snapshot_at": "2026-11-17T00:16:04.846082+08:00",
+  "code_commit": "b3108e7592fa0ccb9cec523306dd80a60121a721",
+  "route": "direct_pc_to_backpack",
+  "input_source": "camera",
+  "source_log": "logs/runs/camera-20261116-232115-650562",
+  "raw_csv_snapshot_sha256": "fb2076630c8a7251480b7565f56220fcb9c54d40092828d3dd4bea42bf1c28dc",
+  "rotation_zero_deg": 2.3255920912715453,
+  "software_target_rows": {
+    "enabled": 3056,
+    "forward": 487,
+    "backward": 484,
+    "left": 637,
+    "right": 816
+  },
+  "software_receiver_hardware_moving_seen": true,
+  "user_observed": {
+    "forward": "passed",
+    "backward": "passed",
+    "left": "passed",
+    "right": "passed",
+    "stop": "software_confirmed",
+    "rotation_at_old_cap15": "passed",
+    "rotation_speed_at_cap60": "passed",
+    "forward_with_turn_at_cap60": "passed",
+    "backward_with_turn_at_cap60": "passed"
+  },
+  "latest_logged_command": {
+    "seq": "82734",
+    "source": "camera",
+    "frame": "70770",
+    "enabled": "False",
+    "input_valid": "False",
+    "age_ms": "125.0",
+    "forward": "0.0",
+    "yaw_left": "0.0",
+    "gesture": "NEUTRAL",
+    "roll_delta_deg": "0.0"
+  },
+  "feedback_kind": "User observations plus software TCP acknowledgements; no measured wheel speed or position",
+  "csv_selection": "All enabled samples plus two neighboring samples; reasons are in pc_events.jsonl",
+  "images_recorded": false,
+  "snapshots": {
+    "pc_commands.csv": {
+      "bytes": 180487,
+      "sha256": "ea40592fa8e71a4a89e9f882f67faec50faa5f65f10841372ed9ff75eb4883ee"
+    },
+    "pc_events.jsonl": {
+      "bytes": 109948,
+      "sha256": "0d3b3fe95d97b87f5c653d52d4f9b29fe7be29084be30564c0115131ba90a696"
+    }
+  },
+  "deployment": {
+    "remote_config_backup": "robot_config.before_rotation60.json",
+    "remote_log": "logs/backpack/20261117-000709-451484.jsonl",
+    "runtime_code_base": "b3108e7592fa0ccb9cec523306dd80a60121a721",
+    "runtime_config_overrides": {
+      "max_rotation": 60,
+      "rotation_acceleration": 120
+    },
+    "current_pc_turn_gain": 1.0,
+    "mode": 0
+  },
+  "observations": [
+    "显示ON，机器人前进了",
+    "实物机器人只能前后移动不能旋转",
+    "能转动了（旋转强度100%，旧上限15）",
+    "旋转参数拉到最大依然太慢，半握能转、握拳/展开难正常旋转",
+    "转速合适，前进后退都能转弯（新上限60）"
+  ],
+  "configuration_phases": [
+    {
+      "max_translation": 20,
+      "max_rotation": 15,
+      "rotation_acceleration": 60,
+      "profile": "8f2dafbe66103b273ecea4144c56b1ad63ed8326032f0931c15b82021fcc32a4",
+      "result": "User confirmed forward/backward; rotation at 100% can start but remains too slow; simultaneous fist/open turning difficult."
+    },
+    {
+      "deployed_at": "2026-11-17T00:07:09+08:00",
+      "max_translation": 20,
+      "max_rotation": 60,
+      "rotation_acceleration": 120,
+      "profile": "0a52b14a2e8b5179c73551c6549c2d5e864272282fc398186cb6b270fc50fd99",
+      "result": "User confirmed rotation speed suitable and simultaneous turning works during both forward and backward motion. Hardware OFF-only connection passed, 87 ACK."
+    }
+  ]
+}

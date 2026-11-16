@@ -26,8 +26,11 @@ def main():
             project=Path(directory)
             (project/"robot_config.json").write_text(json.dumps(DEFAULT),encoding="utf-8")
             root=tk.Tk()
+            root.withdraw()  # Background regression must not steal live control focus.
             app=RobotApp(root,project,demo=True)
             root.update()
+            assert app.turn_gain.get()==100
+            assert app.controller.turn_gain==1.0
             app.connect_robot("127.0.0.1",server.port)
             root.after(500,app.enable)
             root.after(1800,root.quit)

@@ -1,0 +1,32 @@
+test_bad_endpoint_or_mixed_source_rejected (test_control.CalibrationTests) ... ok
+test_discontinuous_short_or_moving_capture_rejected (test_control.CalibrationTests) ... ok
+test_individual_fingers_including_thumb_must_match (test_control.CalibrationTests) ... ok
+test_relaxed_neutral_match_never_arms_a_movement_gesture (test_control.CalibrationTests) ... ok
+test_stable_capture_and_circular_roll (test_control.CalibrationTests) ... ok
+test_static_pose_cannot_equal_a_movement_pose (test_control.CalibrationTests) ... ok
+test_arming_requires_neutral_and_never_moves_on_arm_frame (test_control.ControllerTests) ... ok
+test_duplicate_frame_does_not_refresh_sample_or_advance_dwell (test_control.ControllerTests) ... ok
+test_fist_open_neutral_and_simultaneous_turn (test_control.ControllerTests) ... ok
+test_focus_loss_manual_stop_and_excessive_roll (test_control.ControllerTests) ... ok
+test_fresh_controller_cannot_enable_without_current_calibration (test_control.ControllerTests) ... ok
+test_gesture_requires_dwell_and_change_immediately_removes_translation (test_control.ControllerTests) ... ok
+test_missing_stale_or_future_input_latches_off (test_control.ControllerTests) ... ok
+test_neutral_roll_is_per_calibration_not_absolute_upright (test_control.ControllerTests) ... ok
+test_nonfinite_or_incomplete_features_do_not_escape_as_motion (test_control.ControllerTests) ... ok
+test_out_of_order_timestamp_or_changed_source_stops (test_control.ControllerTests) ... ok
+test_output_bounded_session_sequenced_and_expiring (test_control.ControllerTests) ... ok
+test_watchdog_stops_without_another_frame_and_needs_reenable (test_control.ControllerTests) ... ok
+test_clipped_nonfinite_small_and_degenerate_hands_stop (test_control.GeometryTests) ... ok
+test_features_preserve_scale_and_aspect_ratio (test_control.GeometryTests) ... ok
+test_only_anatomical_left_controls (test_control.GeometryTests) ... ok
+test_screen_left_tilt_has_positive_sign_and_is_finger_independent (test_control.GeometryTests) ... ok
+test_two_left_or_low_confidence_is_rejected (test_control.GeometryTests) ... ok
+test_bootstrap_opens_only_new_module_and_propagates_failure (test_lifecycle.LifecycleTests) ... ok
+test_capture_queue_overwrites_old_frames (test_lifecycle.LifecycleTests) ... ok
+test_logs_hold_numbers_and_events_with_no_image_file (test_lifecycle.LifecycleTests) ... ok
+test_ready_explicit_environment_is_read_only_reused (test_lifecycle.LifecycleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.119s
+
+OK

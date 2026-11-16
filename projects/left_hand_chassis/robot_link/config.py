@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 DEFAULT = dict(serial_port="/dev/ttyS0", baudrate=115200, max_translation=20,
-               max_rotation=15, translation_acceleration=40, rotation_acceleration=60, duration_ms=150)
+               max_rotation=60, translation_acceleration=40, rotation_acceleration=120, duration_ms=150)
 
 
 def validate(config):

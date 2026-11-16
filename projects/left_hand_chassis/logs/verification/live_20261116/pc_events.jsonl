@@ -1,0 +1,674 @@
+{"at": "2026-11-16T23:21:15.712630+08:00", "event": "start", "source": "camera"}
+{"at": "2026-11-16T23:21:15.721204+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:28:41.967873+08:00", "event": "calibration_begin", "stage": "neutral"}
+{"at": "2026-11-16T23:28:42.014283+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "正在校准，输出为零"}
+{"at": "2026-11-16T23:28:47.556460+08:00", "event": "calibration_begin", "stage": "fist"}
+{"at": "2026-11-16T23:28:53.455955+08:00", "event": "calibration_begin", "stage": "opened"}
+{"at": "2026-11-16T23:28:57.516716+08:00", "event": "calibrated", "source": "camera"}
+{"at": "2026-11-16T23:28:57.522696+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:28:57.588783+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:28:58.627782+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:28:58.691771+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:28:58.824760+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:28:58.957913+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:28:59.096747+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "校准完成；点击启用并回到静止位"}
+{"at": "2026-11-16T23:29:24.281257+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:29:26.420761+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:29:26.872025+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:26.944904+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:29:28.542791+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:28.827800+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:29:29.880445+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:29.956805+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:29:30.154756+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:29:31.702500+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:31.776595+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:29:34.267582+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:34.614084+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:29:35.938577+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:36.019109+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:29:36.199167+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:36.476173+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:29:39.260060+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:29:39.463000+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:29:40.558922+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T23:29:40.636097+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:30:03.029718+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:30:03.439047+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:03.518702+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:04.556446+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:04.847616+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:04.857624+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:06.177318+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:06.306475+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:06.555227+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:06.618353+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:06.670398+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:06.930241+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:06.993973+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:07.866361+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:07.941360+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:08.130284+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:08.574917+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:08.708960+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:08.775068+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:08.838062+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:08.906320+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:09.624458+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:09.695195+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:09.763800+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:09.780989+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:09.845234+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:09.857347+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:09.922864+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:09.975949+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:10.238841+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:10.250575+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:10.311586+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:10.371404+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:10.629935+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:10.756078+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:10.815846+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:13.652540+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:13.713544+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:13.733559+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:13.908552+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:14.325813+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:14.397997+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:16.871709+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:17.388510+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:19.651007+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:20.303400+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:21.345133+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:22.141267+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:26.720495+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:26.924133+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:27.044920+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:28.410585+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:30.886921+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:32.080666+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:35.786157+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:30:37.138321+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:37.400139+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:39.116892+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:40.234922+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:30:40.487024+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:30:40.539268+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请让整只左手离开画面边缘"}
+{"at": "2026-11-16T23:30:40.613147+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:31:00.950786+08:00", "event": "robot_connection", "connected": false, "hardware": true, "state": "DISCONNECTED", "error": "timed out"}
+{"at": "2026-11-16T23:34:05.029288+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "设置连接，已暂停"}
+{"at": "2026-11-16T23:34:07.721741+08:00", "event": "robot_connect_requested", "port": 8768}
+{"at": "2026-11-16T23:34:07.762761+08:00", "event": "robot_connection", "connected": false, "hardware": null, "state": "CONNECTING", "error": ""}
+{"at": "2026-11-16T23:34:07.825156+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:34:10.580884+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:34:10.643271+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:34:10.892291+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:34:10.954728+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:34:11.371301+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:11.437109+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:13.242722+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:13.550569+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:34:14.448196+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:14.520637+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:15.362567+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:15.491841+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:34:16.642211+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:16.653981+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:17.314986+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T23:34:17.384117+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:34:33.269342+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:34:34.592254+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:34:34.710478+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:34:34.769516+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:34:34.833536+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:34:34.892478+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:34:35.308077+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:35.374143+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:36.498240+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:36.623722+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:34:37.505971+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:37.689674+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:38.343326+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:34:38.463303+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:38.515003+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T23:34:38.523007+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:34:38.580871+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:34:50.845506+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:34:51.267156+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:34:51.395443+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:34:54.837715+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T23:34:54.905334+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:35:33.657390+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:35:34.078062+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:34.209619+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:35.702160+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:35.949732+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:39.976639+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:40.040845+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:40.051850+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:40.103762+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:43.646281+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:43.892198+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:46.324707+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:46.393518+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:47.096917+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:47.403647+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:49.069554+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:49.136293+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:49.661599+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:49.720268+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:49.779808+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:50.021134+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:50.189114+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:50.202150+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:50.316655+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:50.626246+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:50.920613+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:50.987211+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:51.224353+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:54.315132+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:54.382901+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:35:54.922548+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:55.166767+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:35:59.848329+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:35:59.919661+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:00.400758+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:00.654767+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:06.774957+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:06.852258+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:06.903120+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:07.148971+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:12.136926+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:12.204942+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:12.620046+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:12.925443+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:14.298547+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:14.359800+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:14.367799+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:14.607633+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:15.989960+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:16.055854+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:16.589477+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T23:36:16.661667+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:36:30.514802+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:36:30.693468+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:36:30.763578+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:36:31.125003+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:36:31.384666+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:36:31.622899+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:36:32.048299+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:36:32.107575+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:36:32.228437+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:36:33.495644+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:36:33.912394+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:33.980615+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:35.249214+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请只让一只左手进入控制区域"}
+{"at": "2026-11-16T23:36:35.318181+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:36:40.189748+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:36:40.618835+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:40.751302+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:43.633273+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:44.061558+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:51.887140+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:52.484356+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:53.566208+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:55.173595+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:55.529163+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:58.161636+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:58.220736+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:58.287606+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:58.404762+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:36:59.536694+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:36:59.772614+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:36:59.954687+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:37:00.904013+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:37:01.152491+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:37:01.204657+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:37:01.278620+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:37:02.948644+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:37:03.197371+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:37:04.620738+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:37:04.688651+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:37:07.068284+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手动暂停"}
+{"at": "2026-11-16T23:37:07.084555+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:37:07.313678+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "手动暂停"}
+{"at": "2026-11-16T23:38:31.193121+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:38:31.671761+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:31.806817+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:38:33.024558+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:38:35.397739+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:38:35.575392+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:38:37.167960+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:38:37.352244+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:38:38.561846+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:38:38.745232+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:38:38.860670+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:40.030238+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:40.099174+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:38:41.165530+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:41.300054+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:38:43.047220+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:45.160431+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:45.276604+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:45.510970+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:46.002063+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:46.122438+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "掌面倾斜超过75度，请回正后重新启用"}
+{"at": "2026-11-16T23:38:46.190381+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:38:54.095218+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再张开一些，接近①静止位"}
+{"at": "2026-11-16T23:38:56.423838+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:38:57.344958+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:38:57.828968+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:38:58.249750+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:38:58.317813+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:38:59.650822+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:03.509563+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:03.807170+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:06.509684+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:07.710380+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:09.397708+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "掌面倾斜超过75度，请回正后重新启用"}
+{"at": "2026-11-16T23:39:09.469312+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:39:17.550559+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:39:19.673533+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:39:19.911663+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:39:20.210491+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:39:20.629415+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:39:20.697320+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:22.029858+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:30.748605+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:32.740039+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:34.599140+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "掌面倾斜超过75度，请回正后重新启用"}
+{"at": "2026-11-16T23:39:34.669253+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:39:40.268398+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:39:40.330796+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:39:40.513074+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:39:40.571115+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:39:40.690837+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:39:40.749874+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:39:41.590941+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:39:41.649011+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:39:42.145041+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:39:42.569729+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:39:42.637759+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:46.255848+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:39:46.556915+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:47.335593+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:39:47.460885+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:48.156369+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:39:48.412613+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:49.705600+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:39:49.771504+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:50.386584+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:51.460460+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:51.754413+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:39:53.626050+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:39:55.057314+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手动暂停"}
+{"at": "2026-11-16T23:39:55.127541+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:39:57.265331+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "窗口失去焦点，已暂停"}
+{"at": "2026-11-16T23:43:35.533842+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:43:35.957119+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:36.032111+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:37.669326+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:43:45.018483+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:46.625412+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:46.936309+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:43:47.582462+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:47.640825+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:47.648364+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:47.759170+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:48.294041+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:48.543406+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:43:49.138560+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:43:49.205657+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:50.047127+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:43:51.680488+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:51.802966+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:43:53.785336+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:53.964289+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:43:56.576444+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:43:56.933025+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:01.001690+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:01.121274+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:01.238793+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:01.307590+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:01.420255+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:01.715624+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:02.016530+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:03.223902+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:03.295528+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:05.230238+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:05.401411+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:05.475723+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:05.643043+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:06.240054+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:06.493861+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:07.373524+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:07.432562+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:07.499624+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:07.551283+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:09.289683+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:09.596238+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:09.766724+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:09.825935+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:09.836475+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:09.948219+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:10.437419+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:16.700126+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:16.760167+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:17.000824+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:19.166796+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:20.801614+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:21.219319+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:21.990536+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:22.470245+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:22.530197+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:24.205537+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请让整只左手离开画面边缘"}
+{"at": "2026-11-16T23:44:24.276836+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:44:29.435498+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-16T23:44:29.499199+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-16T23:44:39.115951+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:39.236611+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:39.357733+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:44:39.536939+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:39.595725+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:44:39.659388+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:39.721079+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:44:40.028188+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:40.155212+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:44:40.214140+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:40.520852+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把拇指再收拢一些，接近①静止位"}
+{"at": "2026-11-16T23:44:40.582921+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:44:41.010744+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:44:41.080797+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:43.377654+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:44:49.510462+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:44:50.123312+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:07.918678+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T23:45:07.987696+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:45:16.340378+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-16T23:45:17.626301+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:45:20.277854+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-16T23:45:20.657936+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:20.725722+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:23.419895+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:23.478991+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:24.279917+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:26.582910+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:27.413612+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:27.472709+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:27.531747+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:27.835001+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:28.495899+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:28.563457+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:28.675641+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:28.735392+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:29.162257+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:29.402101+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:29.410653+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:29.471641+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:29.582475+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:29.763375+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:29.954680+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:30.006313+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:30.128328+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:30.187514+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:30.256370+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:30.494424+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:31.154359+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:31.225675+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:31.285526+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:31.458649+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:31.579476+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:31.700585+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:31.885794+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:31.943419+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:32.003766+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:32.243427+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:32.303523+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:32.361094+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:32.481523+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:32.542460+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:33.506014+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:33.567214+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:33.744311+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:33.805363+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:33.864575+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:33.931442+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:34.115198+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-16T23:45:34.345907+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:34.405610+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:34.465705+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:34.525313+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:34.707231+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:34.956356+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-16T23:45:35.152910+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-16T23:45:35.385456+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T23:45:35.455737+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-16T23:45:36.357341+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手动暂停"}
+{"at": "2026-11-17T00:01:30.077284+08:00", "event": "robot_connection", "connected": false, "hardware": true, "state": "DISCONNECTED", "error": "Connection closed"}
+{"at": "2026-11-17T00:08:24.386071+08:00", "event": "robot_connect_requested", "port": 8768}
+{"at": "2026-11-17T00:08:24.422873+08:00", "event": "robot_connection", "connected": false, "hardware": null, "state": "CONNECTING", "error": ""}
+{"at": "2026-11-17T00:08:24.482939+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": ""}
+{"at": "2026-11-17T00:13:42.335841+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-17T00:13:42.736085+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:13:42.809247+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-17T00:13:45.467550+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:13:45.727763+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-17T00:13:47.160001+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:13:47.241630+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-17T00:13:47.927894+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:13:48.263539+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-17T00:13:49.304537+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:13:49.387300+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-17T00:13:50.168672+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-17T00:13:52.316856+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-17T00:13:52.588345+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-17T00:13:54.569513+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-17T00:13:55.464325+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-17T00:13:59.212386+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": ""}
+{"at": "2026-11-17T00:13:59.477206+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": ""}
+{"at": "2026-11-17T00:14:01.829081+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:02.557018+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:02.620661+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:03.283293+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:03.345168+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:04.283805+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:04.350925+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:05.744888+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:05.811106+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:08.694918+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:08.759780+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:09.022269+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:09.110939+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:09.170105+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:13.385581+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-17T00:14:14.486920+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-17T00:14:14.616530+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-17T00:14:14.889865+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-17T00:14:15.635847+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-17T00:14:15.716089+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-17T00:14:15.786803+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-17T00:14:16.600946+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-17T00:14:17.052674+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:17.129591+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:19.159711+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:19.365779+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:20.169387+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:20.243545+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:21.074600+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:22.506659+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:23.726097+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:24.011533+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:24.716626+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:24.785676+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:25.108389+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:25.387539+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:25.653473+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:25.726044+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:26.601588+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:26.798304+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:26.863630+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:27.120679+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:28.595202+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:29.100344+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:34.504252+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:34.588365+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:35.677985+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:36.005531+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:36.774301+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:36.838921+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:36.848005+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:37.036988+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:37.112978+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:37.225967+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:37.293073+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:37.358994+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:37.484564+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:37.801530+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:37.869022+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:38.184046+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:38.568577+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:38.791375+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:38.842938+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:39.169580+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:43.857146+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:43.928766+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:44.260949+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:44.388810+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:44.587355+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:44.666041+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:44.797185+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:45.059065+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:50.127584+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:50.216683+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:50.270828+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:50.394359+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:50.406146+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:50.457716+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:50.776524+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:50.840327+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:50.974781+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:51.488619+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:54.391455+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:54.578582+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:56.184616+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:56.263730+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:56.440438+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:56.450505+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:14:58.949879+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:59.598737+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:14:59.861377+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:00.019361+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:00.192664+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:00.263618+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:00.439538+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:00.707718+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:06.981163+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:07.856509+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:07.965577+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:08.214490+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:08.403375+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:08.454827+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:09.435394+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:09.756421+08:00", "event": "state", "enabled": false, "gesture": "FIST", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:10.024244+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:10.158200+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:10.363470+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:10.928203+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:10.994129+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:11.116198+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:12.093435+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:14.262725+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把小指再弯曲一些，接近①静止位"}
+{"at": "2026-11-17T00:15:14.423106+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把手掌回到①采集时的倾斜角度，先不要转向"}
+{"at": "2026-11-17T00:15:14.483268+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-17T00:15:14.546249+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把中指再伸直一些，接近①静止位"}
+{"at": "2026-11-17T00:15:14.609532+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把食指再伸直一些，接近①静止位"}
+{"at": "2026-11-17T00:15:14.689269+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把中指再伸直一些，接近①静止位"}
+{"at": "2026-11-17T00:15:15.268378+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请把无名指再伸直一些，接近①静止位"}
+{"at": "2026-11-17T00:15:15.406294+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-17T00:15:15.882334+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:15.960420+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:16.691672+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:16.967338+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:18.409264+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:18.498213+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:19.018032+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:19.352689+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:19.373016+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:19.429905+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:19.516945+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:19.576960+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:21.529950+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:22.321083+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:22.433914+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:22.496753+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:22.637743+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:22.904747+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:22.958999+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:23.021920+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:23.031914+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:23.305119+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:24.172295+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:24.243967+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:24.298021+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:24.422888+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:25.125705+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:25.198116+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:25.637767+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:25.774518+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:26.408140+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:26.472419+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:26.908449+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:26.970294+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:27.035804+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:27.043328+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:29.856001+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:29.985696+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:30.260659+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:30.539389+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:31.307955+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:31.382924+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:31.434795+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:31.511566+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:31.834915+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:31.899469+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:31.960677+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:32.036845+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:32.920566+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:33.187623+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:33.304623+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:33.369712+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:33.380863+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:33.640842+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:33.709225+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:33.779096+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:34.115185+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:34.504729+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:34.582305+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:34.773853+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:35.920440+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:36.002303+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:36.120754+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:36.387790+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:36.500790+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:36.569633+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:36.869611+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:36.945390+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:37.016500+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:37.290497+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:37.415641+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:37.499274+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:37.551342+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:37.897495+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:37.952072+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:38.026545+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:38.556558+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:38.820781+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:41.359744+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:41.428697+08:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:42.006626+08:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:42.274318+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "READY", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:43.667483+08:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T00:15:43.947197+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "MOVING", "error": "背包已暂停：数据超时，请重新启用"}
+{"at": "2026-11-17T00:15:44.201489+08:00", "event": "robot_connection", "connected": true, "hardware": true, "state": "DISARMED", "error": "电脑窗口快照超过150毫秒，请重新启用"}
+{"at": "2026-11-17T00:15:44.300170+08:00", "event": "state", "enabled": false, "gesture": "OPEN", "reason": "电脑窗口快照超过150毫秒，请重新启用"}
+{"at": "2026-11-17T00:15:45.255825+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手动暂停"}

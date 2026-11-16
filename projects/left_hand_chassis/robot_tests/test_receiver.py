@@ -186,11 +186,11 @@ class ControlTests(unittest.TestCase):
         self.arm()
         self.c.process(intent(3,forward=1,yaw=-1),100.02)
         self.c.tick(100.02)
-        self.assertEqual(self.c.command,(0,2,-3))
+        self.assertEqual(self.c.command,(0,2,-6))
         for i in range(1,12):
             self.c.process(intent(3+i,forward=1,yaw=-1),100.02+i*.05)
             self.c.tick(100.02+i*.05)
-        self.assertEqual(self.c.command,(0,20,-15))
+        self.assertEqual(self.c.command,(0,20,-60))
 
     def test_axis_release_stops_immediately_and_reverse_ramps(self):
         self.arm()
