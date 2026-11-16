@@ -1,4 +1,4 @@
-name: Verify PC hand preview
+name: Verify AIC hand and chassis controls
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
@@ -42,3 +42,31 @@ jobs:
       - if: runner.os == 'Windows'
         working-directory: projects/left_hand_chassis
         run: python scripts/gui_smoke.py
+      - name: Test backpack link with fake UART
+        working-directory: projects/left_hand_chassis
+        run: python -S run_backpack.py --self-test
+      - name: Test MLK relay with simulated execution
+        working-directory: projects/left_hand_chassis
+        run: python -S run_mlk_relay.py --self-test
+      - if: runner.os == 'Linux'
+        working-directory: projects/left_hand_chassis
+        run: xvfb-run -a python scripts/gui_robot_smoke.py
+      - if: runner.os == 'Windows'
+        working-directory: projects/left_hand_chassis
+        run: python scripts/gui_robot_smoke.py
+  embedded-python38:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'
+      - name: Verify bundled dependency without site packages
+        working-directory: projects/left_hand_chassis
+        run: python -S run_backpack.py --check-deps
+      - name: Test backpack standard-library runtime
+        working-directory: projects/left_hand_chassis
+        run: python -S run_backpack.py --self-test
+      - name: Test board standard-library runtime
+        working-directory: projects/left_hand_chassis
+        run: python -S run_mlk_relay.py --self-test

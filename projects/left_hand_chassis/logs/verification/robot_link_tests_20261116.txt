@@ -1,0 +1,35 @@
+test_first_enable_is_zero_then_matching_ready_allows_motion (test_receiver.ClientTests) ... ok
+test_hardware_client_rejects_demo_and_invalid_host (test_receiver.ClientTests) ... ok
+test_stale_ui_snapshot_latches_until_off (test_receiver.ClientTests) ... ok
+test_all_saved_vendor_vectors_match_byte_for_byte (test_receiver.CodecTests) ... ok
+test_default_receiver_import_loads_no_camera_gui_or_serial_stack (test_receiver.CodecTests) ... ok
+test_initialization_failure_releases_port (test_receiver.CodecTests) ... ok
+test_invalid_encoder_values_are_rejected (test_receiver.CodecTests) ... ok
+test_offline_dependency_import_and_hash_guard (test_receiver.CodecTests) ... ok
+test_only_chassis_startup_and_exit_stop_frames (test_receiver.CodecTests) ... ok
+test_short_write_latches_fault_closes_and_never_retries (test_receiver.CodecTests) ... ok
+test_axis_release_stops_immediately_and_reverse_ramps (test_receiver.ControlTests) ... ok
+test_demo_input_is_rejected_by_hardware_but_allowed_in_preview (test_receiver.ControlTests) ... ok
+test_input_session_or_generation_change_requires_off (test_receiver.ControlTests) ... ok
+test_off_then_zero_enable_required (test_receiver.ControlTests) ... ok
+test_repeated_frame_cannot_extend_source_lifetime (test_receiver.ControlTests) ... ok
+test_targets_combine_and_ramp_within_caps (test_receiver.ControlTests) ... ok
+test_uart_fault_latches_and_releases (test_receiver.ControlTests) ... ok
+test_watchdog_stops_without_a_new_message_and_blocks_generation (test_receiver.ControlTests) ... ok
+test_config_mismatch_and_wrong_uart_are_rejected (test_receiver.ProtocolTests) ... ok
+test_expired_combined_age_and_challenge_rejected (test_receiver.ProtocolTests) ... ok
+test_jsonl_fragmentation_duplicate_keys_and_size_limit (test_receiver.ProtocolTests) ... ok
+test_receiver_requires_explicit_hardware_identity (test_receiver.ProtocolTests) ... ok
+test_types_nonfinite_range_and_disabled_motion_rejected (test_receiver.ProtocolTests) ... ok
+test_valid_message_combines_age_without_synchronized_clocks (test_receiver.ProtocolTests) ... ok
+test_wrong_app_profile_session_challenge_and_replay_rejected (test_receiver.ProtocolTests) ... ok
+test_config_mismatch_refuses_connection_before_motion (test_receiver.TcpIntegrationTests) ... ok
+test_disconnect_sends_stop (test_receiver.TcpIntegrationTests) ... ok
+test_independent_watchdog_runs_while_tcp_waits_on_partial_line (test_receiver.TcpIntegrationTests) ... ok
+test_real_tcp_to_real_encoder_fake_uart_move_reverse_and_stop (test_receiver.TcpIntegrationTests) ... ok
+test_stalled_pc_stops_and_resumed_old_enable_cannot_restart (test_receiver.TcpIntegrationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 5.631s
+
+OK

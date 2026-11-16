@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "version": "1.1.0",
+  "pc_regression": {"tests": 26, "passed": true},
+  "robot_link_tests": {"tests": 30, "passed": true, "real_loopback_tcp": true, "uart": "FakeSerial only"},
+  "vendor_motion_vectors": 89,
+  "python38_syntax_files": 10,
+  "gui_robot_preview_smoke": "passed; actual Tk and local TCP; synthetic hand input",
+  "offline_dependency_check": "passed with Python -S; no pip; no UART opened",
+  "wheel_sha256": "c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0",
+  "real_uart_opened": false,
+  "real_robot_motion_tested": false,
+  "real_camera_opened_this_update": false,
+  "field_acceptance": "pending robot availability"
+}

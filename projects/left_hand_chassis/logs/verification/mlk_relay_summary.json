@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "version": "1.2.0",
+  "tests": 15,
+  "passed_on_host": true,
+  "real_local_two_hop_tcp": true,
+  "execution_sink": "simulation only",
+  "python38_syntax_files": 6,
+  "board_usb_enumerated": true,
+  "board_uart": {"A": "COM12", "B": "COM19", "baud": 115200, "format": "8N1", "rx_bytes": 0, "prompt_query_tx_bytes": 1, "all_ports_closed": true},
+  "linux_console_confirmed": false,
+  "k7_restart_confirmation_received": false,
+  "arm_board_program_executed": false,
+  "actual_board_buttons_tested": false,
+  "real_robot_motion_tested": false,
+  "onboard_pending": ["boot log and Linux shell", "Python3.8 runtime", "IP network", "optional input device/keycodes", "robot low-speed direction and stop tests"]
+}

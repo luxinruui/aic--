@@ -1,8 +1,13 @@
 # AIC 手势控制
 
-当前新增了 **[左手底盘控制独立电脑端](projects/left_hand_chassis/README.md)**：握拳前进、五指展开后退、每次校准静止手势和掌面倾角零点，像转方向盘一样左右倾斜转向。
+当前版本是 **[左手底盘控制 v1.2](projects/left_hand_chassis/README.md)**，包含电脑识别、智慧背包离线接收、可选米联客控制中继与本地启停。
 
-**使用新版本：**进入 `projects/left_hand_chassis`，双击 `run_pc.cmd`；也可在仓库根目录双击 `run_chassis.cmd`。代码、接口说明、开发日志和验证记录均在子项目内。当前阶段为电脑预览，真人手势效果待现场确认，机器人尚未接入。
+- 电脑运行 `projects/left_hand_chassis/run_robot.cmd`，或根目录 `run_chassis_robot.cmd`。只看本地预览可继续用 `run_pc.cmd` / `run_chassis.cmd`。
+- **[智慧背包离线部署](projects/left_hand_chassis/README_BACKPACK.md)**：经NoMachine拷入，默认预览；`--drive`才打开机器人UART。附官方校验后的pySerial wheel，不要求pip或联网。
+- **[米联客模块与上板说明](projects/left_hand_chassis/README_MLK.md)**：可选PC→8769板卡→8768背包，板卡本地允许后仍须电脑手动启用；保留电脑直连背包路线。
+- **[开发日志](projects/left_hand_chassis/logs/development)**、**[验证记录](projects/left_hand_chassis/logs/verification)**：71项主机软件检查、实际本机直连/双跳TCP、模拟UART与独立离线包自检。真实机器人方向/制动与米联客Linux运行仍待现场确认。
+
+米联客USB已识别，当前串口未收到Linux提示符，不能据此声称程序已上板。具体启动、Python、IP网络和实体按键确认点均写入板端说明。
 
 此前的上肢预览代码保留，以下为其原使用说明。
 

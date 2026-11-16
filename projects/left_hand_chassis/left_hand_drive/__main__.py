@@ -56,11 +56,12 @@ def run_demo(frames=280):
 
 
 def main(argv=None):
-    parser=argparse.ArgumentParser(description="PC-only left-hand chassis control preview; no robot outputs")
+    parser=argparse.ArgumentParser(description="PC hand control preview with optional backpack TCP link")
     parser.add_argument("--demo",action="store_true",help="synthetic input; no camera")
     parser.add_argument("--headless",action="store_true",help="run deterministic synthetic validation")
     parser.add_argument("--check",action="store_true",help="check model on blank pixels; no camera")
     parser.add_argument("--camera",type=int,default=0)
+    parser.add_argument("--robot",action="store_true",help="open the optional backpack TCP connection controls")
     args=parser.parse_args(argv)
     if args.check:
         check_model()
@@ -71,7 +72,10 @@ def main(argv=None):
         run_demo()
         return 0
     import tkinter as tk
-    from .gui import App
+    if args.robot:
+        from .robot_gui import RobotApp as App
+    else:
+        from .gui import App
     root=tk.Tk()
     App(root,ROOT,demo=args.demo,camera=args.camera)
     root.mainloop()

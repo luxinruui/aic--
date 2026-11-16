@@ -1,0 +1,4 @@
+Python -S run_backpack.py --check-deps
+Offline pySerial 3.5 loaded; UART NOT OPENED
+Wheel is the official PyPI universal wheel, verified by SHA256 before import.
+Receiver/protocol/self-test syntax checked for Python3.8: 10 files.

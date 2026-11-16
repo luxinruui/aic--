@@ -51,6 +51,7 @@ class App:
         ttk.Label(main, text="左手，掌控底盘", font=("Microsoft YaHei UI", 23, "bold")).pack(anchor="w")
         ttk.Label(main, text="握拳前进  /  展开后退  /  静止手势停车  /  像方向盘一样左右倾斜转向").pack(anchor="w", pady=(4, 14))
         toolbar = ttk.Frame(main)
+        self.toolbar = toolbar
         toolbar.pack(fill="x")
         ttk.Button(toolbar, text="打开摄像头", command=self.start_camera).pack(side="left")
         ttk.Button(toolbar, text="合成演示", command=self.start_demo).pack(side="left", padx=8)
@@ -58,7 +59,8 @@ class App:
         ttk.Label(toolbar, text="  相机").pack(side="left")
         ttk.Spinbox(toolbar, from_=0, to=5, width=3, textvariable=self.camera, command=self.input_settings_changed).pack(side="left")
         ttk.Checkbutton(toolbar, text="交换左右手标签", variable=self.swap, command=self.input_settings_changed).pack(side="left", padx=12)
-        ttk.Label(toolbar, text="电脑预览 · 尚未连接机器人", foreground="#68d7c0").pack(side="right")
+        self.mode_label = ttk.Label(toolbar, text="电脑预览 · 尚未连接机器人", foreground="#68d7c0")
+        self.mode_label.pack(side="right")
         body = ttk.Frame(main)
         body.pack(fill="both", expand=True, pady=14)
         left = ttk.Frame(body)
@@ -316,7 +318,8 @@ class App:
             self.capture_reference(observation,now)
         if not self.demo and self.last_frame_at is not None and now-self.last_frame_at>.30:
             self.image=None
-        focused=self.root.focus_displayof() is not None
+        focus = self.root.focus_get()
+        focused = focus is not None and focus.winfo_toplevel() is self.root
         command=self.controller.tick(now,focused)
         try:
             self.write_snapshot(command)

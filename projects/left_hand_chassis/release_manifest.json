@@ -1,12 +1,13 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "date": "2026-11-16",
-  "python_syntax_files": 12,
+  "python_syntax_files": 31,
+  "real_hardware_tested": false,
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 111,
-      "sha256": "6aedb751ed646fd354bc04f0e115f24c1504d780ab0273424ca420ffa46c7ade"
+      "bytes": 141,
+      "sha256": "1392c48366c22f60a63191223328a05fca9ee1c61f36ff6b43e2732a75adf57f"
     },
     {
       "path": ".gitignore",
@@ -14,19 +15,39 @@
       "sha256": "1342ae20ac7b80f221cfddaef02ba226a242d3bc157935135090902f37adf294"
     },
     {
+      "path": "board_input_probe.py",
+      "bytes": 1585,
+      "sha256": "b921194954be3152e9ac9d3350b85397b9d98c1408eee98c7774c6b5f51d9d01"
+    },
+    {
+      "path": "board_tests/test_relay.py",
+      "bytes": 9044,
+      "sha256": "7b4fec32c51ec89f5d37a290d296794317663f4cdb878528a20a3c7c6a013384"
+    },
+    {
       "path": "docs/INTEGRATION.md",
-      "bytes": 3583,
-      "sha256": "a4aecdd82cf7f4d78fc51097a4a4c62fb4a217e5fb3cdc685e11f212c1b2c769"
+      "bytes": 3840,
+      "sha256": "1b97536b9891d218ffb6cf0e817f9eeba11f19a10293a6317762e8b578bfcc33"
+    },
+    {
+      "path": "docs/ROBOT_PROTOCOL.md",
+      "bytes": 2321,
+      "sha256": "5d342a1e76107ec06660d81be62ade5ab6a96c5e6c40aa9923c12fcbe19a7fea"
+    },
+    {
+      "path": "install_backpack_offline.sh",
+      "bytes": 320,
+      "sha256": "8931e0bd263329e93b8f0838e7103b5e1aa7ea38c3ff981a3d4d9d953dbf07f6"
     },
     {
       "path": "left_hand_drive/__init__.py",
-      "bytes": 84,
-      "sha256": "d8fdd6a2f66a5f49fd17ec6b04d1710c0b030a3696f36a4515233db9f3a2bacc"
+      "bytes": 102,
+      "sha256": "002be10ab496c01df567997c0384d47d254e9e2de9f86843977dbda1e0d78326"
     },
     {
       "path": "left_hand_drive/__main__.py",
-      "bytes": 3258,
-      "sha256": "73694cec94c00b327a81f9d03e772d08a7a49d41ea8be6cf1574f9a37451ce75"
+      "bytes": 3447,
+      "sha256": "95ddc31a47d5641f0fdc8545a126e52619b53b01471b72401eff695571a7ddcf"
     },
     {
       "path": "left_hand_drive/capture.py",
@@ -40,13 +61,28 @@
     },
     {
       "path": "left_hand_drive/gui.py",
-      "bytes": 17431,
-      "sha256": "435ae6b55981ae05b4796c48e2106c83185b371f66295dc8ff085c88367cab6c"
+      "bytes": 17562,
+      "sha256": "d8a23d39fed79442e5fe84eb9aa7fdd27b8279574047d4ebac9f2eddfff646f6"
+    },
+    {
+      "path": "left_hand_drive/robot_gui.py",
+      "bytes": 5604,
+      "sha256": "dc031330046c20f17cb24b52a78d46c79853772c01693e7849e16b2e090254db"
     },
     {
       "path": "left_hand_drive/runlog.py",
       "bytes": 3040,
       "sha256": "440905fe23dad9df361b8b7d1ca52a981523def0a4d5fb3bc628ed93488ffe4c"
+    },
+    {
+      "path": "logs/development/2026-11-16-mlk-relay.md",
+      "bytes": 2566,
+      "sha256": "ab9bd351ff2e88bf47ea0c519e3d02f31fd8bdc71df7d187afe551f57e6534ee"
+    },
+    {
+      "path": "logs/development/2026-11-16-robot-link.md",
+      "bytes": 3684,
+      "sha256": "18f70b99ab2c2ca03831074558151b81c4f46c9960b45d535accef8c3d3189f5"
     },
     {
       "path": "logs/development/2026-11-16.md",
@@ -135,18 +171,18 @@
     },
     {
       "path": "logs/startup/latest.log",
-      "bytes": 571,
-      "sha256": "49b0a08cd22d0f595b56f45889cc3a44dbac718d0b0b6fd19c83b65ed80db5d2"
+      "bytes": 885,
+      "sha256": "00b83988552d12c6e6fd566513169ad2af788aa3c56549fdcf41b63f38f1de4f"
     },
     {
       "path": "logs/startup/launcher.log",
-      "bytes": 54,
-      "sha256": "8882fa3198bbd93aafdf0637293373c66a8daa32d4607e18bafdac2773886ef9"
+      "bytes": 52,
+      "sha256": "f5db811706c00c18cdcb9770fd8fe03ca5e4208edfe216269df9da4df09d856b"
     },
     {
       "path": "logs/startup/previous.log",
-      "bytes": 571,
-      "sha256": "522d45988e4f7a85d88a7dd6d7c2015e3cfacaca5780ccba0ae14dac274e5609"
+      "bytes": 561,
+      "sha256": "900d46e33ebb2c595929381027227eec6c66cc33b07c1e989c896eea9478fe2c"
     },
     {
       "path": "logs/verification/camera_pipeline.json",
@@ -159,14 +195,59 @@
       "sha256": "a3af9b0bda83461e4c9e9beb75701246bcb55d040ccd50bc679dd59b16766ec8"
     },
     {
+      "path": "logs/verification/mlk_relay_summary.json",
+      "bytes": 765,
+      "sha256": "3d557893ac91005cdd939513c731dc3d7588d6f8399c69eeb1fef829560a2444"
+    },
+    {
+      "path": "logs/verification/mlk_relay_tests_20261116.txt",
+      "bytes": 1337,
+      "sha256": "de94b2ba0b0a4ea636f1047275955297fb27ddee1e332e9dab50e5bc8cdfa8a7"
+    },
+    {
       "path": "logs/verification/model_check.txt",
       "bytes": 664,
       "sha256": "a6d9bd1ac248be733d137c74b94b41969b1ac919c9e2906be4d2c4eabfabb591"
     },
     {
+      "path": "logs/verification/release_v1_2_summary.json",
+      "bytes": 656,
+      "sha256": "b82bb20c6e1767ec1ea434a314a0421abdbcb486c72495d1bcb7c95f31b08021"
+    },
+    {
+      "path": "logs/verification/robot_gui_smoke.txt",
+      "bytes": 161,
+      "sha256": "3a5911d875e2def653b69ebbb05fad226501ea40881b10c0945b1d090e2ec0c6"
+    },
+    {
+      "path": "logs/verification/robot_link_summary.json",
+      "bytes": 711,
+      "sha256": "cfe162cca5f742be207fee65de50237fef0781780ecbf2b9a4cb03916816c37a"
+    },
+    {
+      "path": "logs/verification/robot_link_tests_20261116.txt",
+      "bytes": 2782,
+      "sha256": "7e57189f341d8b427da5d161d1347eca1e61f36141cde70052863bf17a64d080"
+    },
+    {
+      "path": "logs/verification/robot_offline_dependency.txt",
+      "bytes": 230,
+      "sha256": "a353056a3121c56d45c0e771a220bc66bfac4d8d10f0a882077dbc5c31e5aeb7"
+    },
+    {
+      "path": "logs/verification/robot_offline_package.txt",
+      "bytes": 392,
+      "sha256": "b2abbd198998589f151e1408987de89a5ea9cb3da01e557b820c736e07b2147a"
+    },
+    {
       "path": "logs/verification/root_launcher_regression.json",
       "bytes": 361,
       "sha256": "b5b539238d6ec63044ac71c3ffdfd0e4e059a3374f87cb754209c3d5af258018"
+    },
+    {
+      "path": "logs/verification/run_robot_launcher.txt",
+      "bytes": 949,
+      "sha256": "861624e08ff8129d6ac501d5618cc0905a8cd03052793ec169d669248000386c"
     },
     {
       "path": "logs/verification/summary.json",
@@ -184,9 +265,49 @@
       "sha256": "1ebfaf27c7b980cb60c38ae7c4af85347374d94cea805eac54e50c71cfafc5df"
     },
     {
+      "path": "mlk_relay/__init__.py",
+      "bytes": 81,
+      "sha256": "b5a037c0e5a65ad88cc8a99ae232e6588a49d36db13e815dca2d13dd120b6326"
+    },
+    {
+      "path": "mlk_relay/core.py",
+      "bytes": 5631,
+      "sha256": "6a1423c839e0a2ea066b96ac8eb6f9da7bf2ce3a0e667c77e8a45e43212d739a"
+    },
+    {
+      "path": "mlk_relay/inputs.py",
+      "bytes": 2319,
+      "sha256": "c52c23ac1e27fb72bf391c988b4cae41e8d2147ed105e99ad4571cd9b102fed3"
+    },
+    {
+      "path": "offline_deps/LICENSE-pyserial.txt",
+      "bytes": 1885,
+      "sha256": "f91cb9813de6a5b142b8f7f2dede630b5134160aedaeaf55f4d6a7e2593ca3f3"
+    },
+    {
+      "path": "offline_deps/pyserial-3.5-py2.py3-none-any.whl",
+      "bytes": 90585,
+      "sha256": "c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"
+    },
+    {
+      "path": "offline_deps/pyserial.lock.json",
+      "bytes": 305,
+      "sha256": "d355e4ef65bcbdd5f8759a2f77c74ffe14f28d370d554108f733d50a14c54954"
+    },
+    {
       "path": "README.md",
-      "bytes": 4295,
-      "sha256": "98b4fb1606ff762c63b741452035e80f759e3cdf324a8e8454fcf821baf19639"
+      "bytes": 5223,
+      "sha256": "13a7f8d5bb5f75e359064d5bd8811b1de260f50ebfb1c59b82bcaecae9c53d2a"
+    },
+    {
+      "path": "README_BACKPACK.md",
+      "bytes": 6162,
+      "sha256": "1f7c4c3327b261e4a8890eb1bafa5d0270d5c47b2560b0b238071b1553157f14"
+    },
+    {
+      "path": "README_MLK.md",
+      "bytes": 5893,
+      "sha256": "29054b86173aa4284f72c7a0c242b23d1ca9d32a8cbbd72a652bc5e680a549bb"
     },
     {
       "path": "requirements.txt",
@@ -194,9 +315,79 @@
       "sha256": "95e75cce6e7e2da96b77fe642be1e07a4b6db2affdc2904e55491f7793934219"
     },
     {
+      "path": "requirements_backpack.txt",
+      "bytes": 14,
+      "sha256": "0b81718d1cbe8a7696e45a9388c9205272b5e345cd79d0cf1ccfb7a9fd1925e9"
+    },
+    {
+      "path": "robot_config.json",
+      "bytes": 190,
+      "sha256": "28f624d25e83a80cfb4a87ca2c8284f9c44b4877111b746aaaaf1eb0879a8166"
+    },
+    {
+      "path": "robot_link/__init__.py",
+      "bytes": 86,
+      "sha256": "7efff3727688afedec588ecc053a39899134582570e8bc244fd2625d11d3ef34"
+    },
+    {
+      "path": "robot_link/client.py",
+      "bytes": 7694,
+      "sha256": "c3d46f5c17b6466fe2ad7cac61fe7d81effebf4d4a0f107a4dc1ee3ec5b9608b"
+    },
+    {
+      "path": "robot_link/codec.py",
+      "bytes": 3007,
+      "sha256": "3b4809d89cbca8d8d83adf391c24faf0afd110c5e4f28fa7ded858149990fd91"
+    },
+    {
+      "path": "robot_link/config.py",
+      "bytes": 1580,
+      "sha256": "aa15e1e030d1f8e8cdef17ff57666a1106e2e1ba2adee2885312f54e3561c7b7"
+    },
+    {
+      "path": "robot_link/control.py",
+      "bytes": 7392,
+      "sha256": "dcf15d2aa0bdd9eecd384c91d6544cea8de20f23df83e6d37b8b166377a822bb"
+    },
+    {
+      "path": "robot_link/offline.py",
+      "bytes": 775,
+      "sha256": "c53250e47ca332cdaf467e840fe9e75fd02d92b504fb56a2f41432413e7367a6"
+    },
+    {
+      "path": "robot_link/protocol.py",
+      "bytes": 6703,
+      "sha256": "80533e3088bf6bbafef95f09953786f312d29a2e85e9a7e37832c524aac6f371"
+    },
+    {
+      "path": "robot_link/server.py",
+      "bytes": 4448,
+      "sha256": "c4b3ea22ac4a26245b986c656f94ff877b67a31e470065e4a1dccdbb818635c1"
+    },
+    {
+      "path": "robot_tests/test_receiver.py",
+      "bytes": 16057,
+      "sha256": "b93f32d867b623c5e0296d44d2881c64ed4659837e3b1ddd35713c8840985958"
+    },
+    {
+      "path": "robot_tests/vendor_vectors.json",
+      "bytes": 11959,
+      "sha256": "ef58702442b15869578aa62a71d46dee0ba89dba38db39f471d35f68c092eac0"
+    },
+    {
+      "path": "run_backpack.py",
+      "bytes": 3894,
+      "sha256": "ce2329089ae778e2d3b3b53a742292bcec5c8188d86a839051a85ad0aef13087"
+    },
+    {
       "path": "run_demo.cmd",
       "bytes": 118,
       "sha256": "9ed52a67a38c2ea0214c9248922376154193a51e90121f5220c7e88f7f94d33d"
+    },
+    {
+      "path": "run_mlk_relay.py",
+      "bytes": 5952,
+      "sha256": "595b3a4727f809344e6d8b4efccfb1acf20bb1bc455f0c0367890b5872b54b79"
     },
     {
       "path": "run_pc.cmd",
@@ -204,14 +395,29 @@
       "sha256": "ae9771a2ba0ad7fd37f7251c5b5cb0ed5062a502bb842df5675b3aec8ece6e72"
     },
     {
+      "path": "run_robot.cmd",
+      "bytes": 119,
+      "sha256": "f8caeaa0ba2d41dc9d338fe15262719d48b2a012f57122f60338dd9e7f3707fe"
+    },
+    {
       "path": "scripts/bootstrap.py",
       "bytes": 9030,
       "sha256": "84f55268ec9f65dff1e60f453bb9af69845052fec585318f9686c87c6dbed22e"
     },
     {
+      "path": "scripts/build_packages.py",
+      "bytes": 4842,
+      "sha256": "03ef1436b48f74a5eb953cfb768a550af39bb8f4e2e12b604c7ceba97f1407a7"
+    },
+    {
       "path": "scripts/camera_probe.py",
       "bytes": 1562,
       "sha256": "45d12e4d46167367a537807744dd225b2e6bb12c713cf605eaadaad388a94c77"
+    },
+    {
+      "path": "scripts/gui_robot_smoke.py",
+      "bytes": 2083,
+      "sha256": "cc69bf322fe0b91805e92cd76effd50f2effe38175371ba540d0189b67a064ae"
     },
     {
       "path": "scripts/gui_smoke.py",
@@ -222,6 +428,16 @@
       "path": "scripts/sync_logs.py",
       "bytes": 2165,
       "sha256": "5904995ee1b7e33ecfc8fcd84d10f4ada39bf4e9b70220696ea3637fd4df57c4"
+    },
+    {
+      "path": "start_backpack_preview.sh",
+      "bytes": 105,
+      "sha256": "fd47eaed707d061c4f97e70efafaa18fd460b104c15f288893fc0d33427f3851"
+    },
+    {
+      "path": "start_backpack_robot.sh",
+      "bytes": 113,
+      "sha256": "d8f92e08611c815c22e4f76384d1931dbcb0a461c8df06be901e0ec80916541c"
     },
     {
       "path": "sync_logs.cmd",
@@ -237,8 +453,16 @@
       "path": "tests/test_lifecycle.py",
       "bytes": 3018,
       "sha256": "9d25dc86f60144a70463c7ceee1e06c4bb9f9e674864d3cbdb080d06ecee0584"
+    },
+    {
+      "path": "backpack_manifest.json",
+      "bytes": 3908,
+      "sha256": "69aeb696d1dbbb7479e759a41c69c43c56a986c08d62c2864ccef272b537aa90"
+    },
+    {
+      "path": "mlk_manifest.json",
+      "bytes": 3039,
+      "sha256": "36cc55fc4e26ab7c7c83389a9ef76ebe0c5664381e0b60b6650a211ac426f542"
     }
-  ],
-  "hardware_connected": false,
-  "human_gesture_validation": "pending"
+  ]
 }

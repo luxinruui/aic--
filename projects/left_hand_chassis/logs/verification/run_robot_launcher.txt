@@ -1,0 +1,21 @@
+AIC LEFT-HAND CHASSIS - starting. Please keep this window open.
+AIC left-hand chassis PC startup 2026-11-16T18:44:24.244616+08:00
+[1/4] Finding a supported Python...
+Using Python 3.10 (64 bit): <existing-compatible-python>
+[2/4] Using the configured existing environment without changes.
+[3/4] Dependencies already match; no installation needed.
+[4/4] Opening left-hand chassis preview...
+$ <existing-compatible-python> -u -m left_hand_drive --robot --help
+usage: __main__.py [-h] [--demo] [--headless] [--check] [--camera CAMERA]
+                   [--robot]
+
+PC hand control preview with optional backpack TCP link
+
+options:
+  -h, --help       show this help message and exit
+  --demo           synthetic input; no camera
+  --headless       run deterministic synthetic validation
+  --check          check model on blank pixels; no camera
+  --camera CAMERA
+  --robot          open the optional backpack TCP connection controls
+Process exit code: 0

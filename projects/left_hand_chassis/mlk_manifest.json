@@ -1,0 +1,100 @@
+{
+  "version": "1.2.0",
+  "files": [
+    {
+      "path": "board_input_probe.py",
+      "bytes": 1585,
+      "sha256": "b921194954be3152e9ac9d3350b85397b9d98c1408eee98c7774c6b5f51d9d01"
+    },
+    {
+      "path": "board_tests/test_relay.py",
+      "bytes": 9044,
+      "sha256": "7b4fec32c51ec89f5d37a290d296794317663f4cdb878528a20a3c7c6a013384"
+    },
+    {
+      "path": "docs/ROBOT_PROTOCOL.md",
+      "bytes": 2321,
+      "sha256": "5d342a1e76107ec06660d81be62ade5ab6a96c5e6c40aa9923c12fcbe19a7fea"
+    },
+    {
+      "path": "logs/development/2026-11-16-mlk-relay.md",
+      "bytes": 2566,
+      "sha256": "ab9bd351ff2e88bf47ea0c519e3d02f31fd8bdc71df7d187afe551f57e6534ee"
+    },
+    {
+      "path": "logs/verification/mlk_relay_summary.json",
+      "bytes": 765,
+      "sha256": "3d557893ac91005cdd939513c731dc3d7588d6f8399c69eeb1fef829560a2444"
+    },
+    {
+      "path": "logs/verification/mlk_relay_tests_20261116.txt",
+      "bytes": 1337,
+      "sha256": "de94b2ba0b0a4ea636f1047275955297fb27ddee1e332e9dab50e5bc8cdfa8a7"
+    },
+    {
+      "path": "mlk_relay/__init__.py",
+      "bytes": 81,
+      "sha256": "b5a037c0e5a65ad88cc8a99ae232e6588a49d36db13e815dca2d13dd120b6326"
+    },
+    {
+      "path": "mlk_relay/core.py",
+      "bytes": 5631,
+      "sha256": "6a1423c839e0a2ea066b96ac8eb6f9da7bf2ce3a0e667c77e8a45e43212d739a"
+    },
+    {
+      "path": "mlk_relay/inputs.py",
+      "bytes": 2319,
+      "sha256": "c52c23ac1e27fb72bf391c988b4cae41e8d2147ed105e99ad4571cd9b102fed3"
+    },
+    {
+      "path": "README_BACKPACK.md",
+      "bytes": 6162,
+      "sha256": "1f7c4c3327b261e4a8890eb1bafa5d0270d5c47b2560b0b238071b1553157f14"
+    },
+    {
+      "path": "README_MLK.md",
+      "bytes": 5893,
+      "sha256": "29054b86173aa4284f72c7a0c242b23d1ca9d32a8cbbd72a652bc5e680a549bb"
+    },
+    {
+      "path": "robot_config.json",
+      "bytes": 190,
+      "sha256": "28f624d25e83a80cfb4a87ca2c8284f9c44b4877111b746aaaaf1eb0879a8166"
+    },
+    {
+      "path": "robot_link/__init__.py",
+      "bytes": 86,
+      "sha256": "7efff3727688afedec588ecc053a39899134582570e8bc244fd2625d11d3ef34"
+    },
+    {
+      "path": "robot_link/client.py",
+      "bytes": 7694,
+      "sha256": "c3d46f5c17b6466fe2ad7cac61fe7d81effebf4d4a0f107a4dc1ee3ec5b9608b"
+    },
+    {
+      "path": "robot_link/config.py",
+      "bytes": 1580,
+      "sha256": "aa15e1e030d1f8e8cdef17ff57666a1106e2e1ba2adee2885312f54e3561c7b7"
+    },
+    {
+      "path": "robot_link/control.py",
+      "bytes": 7392,
+      "sha256": "dcf15d2aa0bdd9eecd384c91d6544cea8de20f23df83e6d37b8b166377a822bb"
+    },
+    {
+      "path": "robot_link/protocol.py",
+      "bytes": 6703,
+      "sha256": "80533e3088bf6bbafef95f09953786f312d29a2e85e9a7e37832c524aac6f371"
+    },
+    {
+      "path": "robot_link/server.py",
+      "bytes": 4448,
+      "sha256": "c4b3ea22ac4a26245b986c656f94ff877b67a31e470065e4a1dccdbb818635c1"
+    },
+    {
+      "path": "run_mlk_relay.py",
+      "bytes": 5952,
+      "sha256": "595b3a4727f809344e6d8b4efccfb1acf20bb1bc455f0c0367890b5872b54b79"
+    }
+  ]
+}

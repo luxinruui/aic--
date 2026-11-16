@@ -1,0 +1,2 @@
+Robot Tk controls, connection dialog, TCP PREVIEW feedback and STOP passed.
+Actual Tk/Pillow and real local TCP; synthetic hand input; no UART or camera opened.

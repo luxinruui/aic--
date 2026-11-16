@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-16",
+  "version": "1.2.0",
+  "pc_tests": 26,
+  "backpack_link_tests": 30,
+  "mlk_relay_tests": 15,
+  "total_software_tests": 71,
+  "all_passed_on_host": true,
+  "gui_network_preview": "passed with actual Tk and local preview TCP",
+  "backpack_standalone_package_selftest": "30 passed, no installed third-party packages required",
+  "mlk_standalone_package_selftest": "15 passed on host; not on ARM board",
+  "uart_motion_vectors_verified": 89,
+  "real_robot_uart_opened": false,
+  "real_robot_motion_tested": false,
+  "board_linux_prompt_observed": false,
+  "board_deployment": "pending Linux boot, runtime and IP link confirmation"
+}

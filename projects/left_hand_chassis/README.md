@@ -1,6 +1,10 @@
-# 左手底盘控制 · 独立电脑端 v1.0
+# 左手底盘控制 · 电脑、背包与米联客中继 v1.2
 
-本项目实现左手手势到前后/旋转控制意图的独立模块，含摄像头预览、每次启动校准、虚拟底盘和数值日志。当前阶段在电脑端验证操作，不连接机器人。
+本项目实现左手手势到前后/旋转控制意图的独立模块，含摄像头预览、每次启动校准、虚拟底盘和数值日志。默认入口只在电脑预览，机器人接入使用下面的独立入口。
+
+v1.1新增 **`run_robot.cmd`电脑发送窗口、`run_backpack.py`背包接收端** 和完整离线串口依赖。机器人不在手边，已完成软件接入实现，实机效果待验收。默认 `run_pc.cmd` 继续只看本地预览；要连接背包请读 **[NoMachine离线部署说明](README_BACKPACK.md)**。
+
+v1.2增加可选 **[米联客转发与本地启停模块](README_MLK.md)**。电脑可继续直连背包8768，或连接米联客8769，再由板卡转发到背包。板卡端必须先本地允许，电脑还需校准并手动启用。
 
 ## 开始使用
 
@@ -34,7 +38,7 @@
 
 ## 后续接入接口
 
-见 [接口说明](docs/INTEGRATION.md)。输出 `forward` 与 `yaw_left`，范围均为[-1,1]；正数分别为前进和左转，负数分别为后退和右转。本项目不含舵机控制、机器人TCP发送或串口驱动。
+见 [接口说明](docs/INTEGRATION.md)。输出 `forward` 与 `yaw_left`，范围均为[-1,1]；正数分别为前进和左转，负数分别为后退和右转。可通过新增 `robot_link` 的TCP8768与底盘UART执行层接入；不包含上肢舵机控制。
 
 ## 验证命令
 
@@ -45,6 +49,10 @@ python -m unittest discover -s tests -v
 python -m left_hand_drive --check
 python -m left_hand_drive --headless --demo
 python scripts/gui_smoke.py
+python3 -S run_backpack.py --self-test
+python3 -S run_mlk_relay.py --self-test
 ```
 
 识别使用 MediaPipe 0.10.21 的 `solutions.hands`，模型随wheel提供，本地CPU运行。首次安装及具体真人效果分别见启动日志和验证说明。
+
+在Python3.10以上执行 `python scripts/build_packages.py`，会在本项目 `deliverables/` 生成电脑、背包和米联客三个独立ZIP，并校验CRC、清单哈希及逐文件回读；不会打开任何设备。

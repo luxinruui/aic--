@@ -1,0 +1,5 @@
+The minimal backpack ZIP was extracted to an independent staging folder.
+Its 24-file inventory passed SHA256 validation (plus the inventory itself).
+Python -S run_backpack.py --check-deps: pySerial 3.5 loaded, UART NOT OPENED.
+Python -S run_backpack.py --self-test: 30 tests passed from the extracted package.
+Only local TCP and FakeSerial were used; no camera or real robot UART was opened.
