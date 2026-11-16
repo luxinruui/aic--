@@ -1,0 +1,14 @@
+{"at": "2026-11-16T22:46:23.992098+08:00", "event": "listening", "bind": "0.0.0.0", "port": 8768, "hardware": true, "profile": "8f2dafbe66103b273ecea4144c56b1ad63ed8326032f0931c15b82021fcc32a4"}
+{"at": "2026-11-16T22:46:24.042375+08:00", "event": "state", "state": "DISARMED", "reason": "等待电脑明确启用", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:46:51.877035+08:00", "event": "state", "state": "DISARMED", "reason": "新连接，请手动启用", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:46:51.968061+08:00", "event": "state", "state": "DISARMED", "reason": "电脑暂停", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:46:56.624809+08:00", "event": "connection_ended", "reason": "Connection closed"}
+{"at": "2026-11-16T22:46:56.626714+08:00", "event": "state", "state": "DISARMED", "reason": "连接结束，已停车", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:47:17.047801+08:00", "event": "state", "state": "DISARMED", "reason": "新连接，请手动启用", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:47:17.059295+08:00", "event": "state", "state": "DISARMED", "reason": "电脑暂停", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:50:13.203048+08:00", "event": "connection_ended", "reason": "Connection closed"}
+{"at": "2026-11-16T22:50:13.203897+08:00", "event": "state", "state": "DISARMED", "reason": "连接结束，已停车", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:50:28.038376+08:00", "event": "state", "state": "DISARMED", "reason": "新连接，请手动启用", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:50:28.048028+08:00", "event": "state", "state": "DISARMED", "reason": "电脑暂停", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}
+{"at": "2026-11-16T22:56:40.217619+08:00", "event": "connection_ended", "reason": "timed out"}
+{"at": "2026-11-16T22:56:40.219365+08:00", "event": "state", "state": "DISARMED", "reason": "连接结束，已停车", "hardware": true, "generation": 0, "rearm_required": true, "command": [0, 0, 0]}

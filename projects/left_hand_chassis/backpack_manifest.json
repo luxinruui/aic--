@@ -12,6 +12,11 @@
       "sha256": "8931e0bd263329e93b8f0838e7103b5e1aa7ea38c3ff981a3d4d9d953dbf07f6"
     },
     {
+      "path": "logs/development/2026-11-16-deployment.md",
+      "bytes": 4153,
+      "sha256": "cc6b476b30776627354426ce5ae4016a87b2a5c428c47dee99895685988dd87c"
+    },
+    {
       "path": "logs/development/2026-11-16-robot-link.md",
       "bytes": 3684,
       "sha256": "18f70b99ab2c2ca03831074558151b81c4f46c9960b45d535accef8c3d3189f5"

@@ -61,6 +61,7 @@ def main():
     backpack=[p for p in files if p.relative_to(PROJECT).parts[0] in ("robot_link","robot_tests","offline_deps")
               or p.relative_to(PROJECT).as_posix() in direct
               or p.relative_to(PROJECT).as_posix() in ("docs/ROBOT_PROTOCOL.md", "logs/development/2026-11-16-robot-link.md",
+                  "logs/development/2026-11-16-deployment.md",
                   "logs/verification/robot_link_summary.json","logs/verification/robot_link_tests_20261116.txt")]
     # A package-specific inventory avoids suggesting that omitted PC files exist.
     inventory=PROJECT/"backpack_manifest.json"

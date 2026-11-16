@@ -75,9 +75,14 @@
       "sha256": "440905fe23dad9df361b8b7d1ca52a981523def0a4d5fb3bc628ed93488ffe4c"
     },
     {
+      "path": "logs/backpack/20261116-224623-957522.jsonl",
+      "bytes": 2479,
+      "sha256": "cd04134555714d1aa8d24b8bbb8100417a73e943efc37f4acc1372c79ad7c8a5"
+    },
+    {
       "path": "logs/development/2026-11-16-deployment.md",
-      "bytes": 2918,
-      "sha256": "eda44625f7a43dac4ef2128df4966d2ae8d49064795c730b1366165ef1bbf704"
+      "bytes": 4153,
+      "sha256": "cc6b476b30776627354426ce5ae4016a87b2a5c428c47dee99895685988dd87c"
     },
     {
       "path": "logs/development/2026-11-16-mlk-relay.md",
@@ -436,8 +441,8 @@
     },
     {
       "path": "scripts/build_packages.py",
-      "bytes": 5094,
-      "sha256": "b1baa99b56f8ed77413e012e27c93d2cb432f5eaf1a62c35ddc3bfd8ca9fb0f5"
+      "bytes": 5157,
+      "sha256": "48dd9cd9d729533cdd2bedf9da6a46b12f321583639b7cf82a1e9bd1f36383ff"
     },
     {
       "path": "scripts/camera_probe.py",
@@ -491,8 +496,8 @@
     },
     {
       "path": "backpack_manifest.json",
-      "bytes": 3908,
-      "sha256": "aeae8c2814b041f5646bf82cb93056e4e1e44f6e02aec92cb55e73c8aa369c13"
+      "bytes": 4084,
+      "sha256": "e8de4b90038600954c366192d897872d01c54803a807601f828ace2913582b25"
     },
     {
       "path": "mlk_manifest.json",
