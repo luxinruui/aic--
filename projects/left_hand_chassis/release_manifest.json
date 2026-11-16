@@ -50,8 +50,8 @@
     },
     {
       "path": "logs/development/2026-11-16.md",
-      "bytes": 3701,
-      "sha256": "d04fd86e4533d4b904e565f2ff3624b80d2689effc4a29f44d6c0e3c3f8d8fbe"
+      "bytes": 4433,
+      "sha256": "5b7ba5e0d33b836ce3833aefd2e3b939f17e846da27160c496c70ab8856e016c"
     },
     {
       "path": "logs/runs/demo-20261116-154840-907215/calibration.json",
@@ -162,6 +162,11 @@
       "path": "logs/verification/model_check.txt",
       "bytes": 664,
       "sha256": "a6d9bd1ac248be733d137c74b94b41969b1ac919c9e2906be4d2c4eabfabb591"
+    },
+    {
+      "path": "logs/verification/root_launcher_regression.json",
+      "bytes": 361,
+      "sha256": "b5b539238d6ec63044ac71c3ffdfd0e4e059a3374f87cb754209c3d5af258018"
     },
     {
       "path": "logs/verification/summary.json",

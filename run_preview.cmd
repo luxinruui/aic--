@@ -42,7 +42,7 @@ goto finished
 "%AIC_PYTHON%" -u scripts\bootstrap.py %* 2>>"logs\startup\launcher.log"
 :finished
 set "AIC_EXIT=%ERRORLEVEL%"
-echo Launcher exit code: %AIC_EXIT%>>"logs\startup\launcher.log"
+>>"logs\startup\launcher.log" echo Launcher exit code: %AIC_EXIT%
 if "%AIC_EXIT%"=="0" exit /b 0
 :failed
 echo.
