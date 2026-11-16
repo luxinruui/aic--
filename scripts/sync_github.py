@@ -25,9 +25,10 @@ def sync():
     if git("diff", "--cached", "--name-only", capture=True).stdout.strip():
         raise ValueError("Other files are already staged. Commit or unstage them before syncing run logs.")
     files = []
-    for folder in (ROOT / "logs" / "runs",):
+    for folder, suffixes in ((ROOT / "logs" / "runs", (".json", ".jsonl", ".csv")),
+                             (ROOT / "logs" / "startup", (".log",))):
         for path in sorted(folder.rglob("*")):
-            if path.is_file() and path.suffix in (".json", ".jsonl", ".csv"):
+            if path.is_file() and path.suffix in suffixes:
                 if path.is_symlink() or path.stat().st_size > 5 * 1024 * 1024:
                     raise ValueError("Run log is a link or exceeds 5 MB: " + str(path.relative_to(ROOT)))
                 files.append(path.relative_to(ROOT).as_posix())

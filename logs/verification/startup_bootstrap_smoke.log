@@ -1,0 +1,9 @@
+AIC hand preview startup 2026-11-16T04:58:31.902741+00:00
+[1/4] Finding a supported Python...
+Using Python 3.12 (64 bit): /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12
+[2/4] Checking project environment...
+[3/4] Dependencies already match; no installation needed.
+[4/4] Opening hand preview. The camera window should appear shortly...
+$ /workspace/aic--/.venv/bin/python -u -m aic_hand --headless --demo --frames 8 --log-dir /tmp/aic-bootstrap-smoke-v011
+{"status": 0, "source": "demo", "frames": 8, "log_directory": "/tmp/aic-bootstrap-smoke-v011", "robot_connected": false}
+Process exit code: 0

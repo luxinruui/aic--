@@ -34,11 +34,15 @@ class SyncTests(unittest.TestCase):
         folder.mkdir(parents=True)
         (folder / "events.jsonl").write_text('{"event":"start"}\n')
         (folder / "private.png").write_bytes(b"not a real image")
+        startup = self.root / "logs" / "startup"
+        startup.mkdir(parents=True)
+        (startup / "latest.log").write_text("startup failure detail\n")
         (self.root / "unrelated.py").write_text("# unrelated\n")
         with patch.object(sync_github, "ROOT", self.root), patch.object(sync_github, "ALLOWED_ORIGINS", (str(self.remote),)):
             self.assertEqual(sync_github.sync(), 0)
         tree = self.run_git("ls-tree", "-r", "--name-only", "HEAD")
         self.assertIn("events.jsonl", tree)
+        self.assertIn("logs/startup/latest.log", tree)
         self.assertNotIn("private.png", tree)
         self.assertNotIn("unrelated.py", tree)
         self.assertEqual(self.run_git("rev-parse", "HEAD"), self.run_git("rev-parse", "refs/heads/main", cwd=self.remote))
