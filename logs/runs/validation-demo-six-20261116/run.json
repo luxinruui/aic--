@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "app_version": "0.1.0",
+  "run_id": "20261116_033437_0d398b2c",
+  "started_at": "2026-11-16T03:34:37.813805+00:00",
+  "source": "demo",
+  "robot_connected": false,
+  "python": "3.12.14",
+  "platform": "Linux",
+  "config": {
+    "schema_version": 1,
+    "camera": 0,
+    "width": 640,
+    "height": 480,
+    "mirror": true,
+    "swap_hands": false,
+    "mode": "six",
+    "single_axis": "left_elbow",
+    "min_handedness_score": 0.65,
+    "max_age_seconds": 0.35,
+    "smoothing_seconds": 0.12,
+    "deadband_degrees": 1.5,
+    "calibration": {
+      "Left": {
+        "y_top": 0.2,
+        "y_bottom": 0.8,
+        "x_out": 0.85,
+        "x_in": 0.5,
+        "pinch_closed": 0.15,
+        "pinch_open": 1.6
+      },
+      "Right": {
+        "y_top": 0.2,
+        "y_bottom": 0.8,
+        "x_out": 0.15,
+        "x_in": 0.5,
+        "pinch_closed": 0.15,
+        "pinch_open": 1.6
+      }
+    }
+  },
+  "status": "stopped",
+  "stop_reason": "完成指定帧数",
+  "frames": 180,
+  "logged_frames": 53,
+  "valid_frames": {
+    "left_elbow": 165,
+    "right_elbow": 180,
+    "left_upper": 165,
+    "right_upper": 180,
+    "left_lift": 165,
+    "right_lift": 180
+  },
+  "elapsed_s": 6.0623,
+  "mean_inference_ms": 0.0
+}

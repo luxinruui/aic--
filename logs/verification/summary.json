@@ -1,0 +1,50 @@
+{
+  "camera_hardware_tested": false,
+  "robot_connected": false,
+  "checks": [
+    {
+      "name": "unit_tests",
+      "exit_code": 0
+    },
+    {
+      "name": "model_check",
+      "exit_code": 0
+    },
+    {
+      "name": "demo_six",
+      "exit_code": 0
+    },
+    {
+      "name": "gui_python312",
+      "exit_code": 0
+    },
+    {
+      "name": "gui_cjk_render",
+      "exit_code": 0
+    }
+  ],
+  "python310_syntax_files": [
+    "aic_hand/__main__.py",
+    "aic_hand/__init__.py",
+    "aic_hand/gui.py",
+    "aic_hand/capture.py",
+    "aic_hand/runlog.py",
+    "aic_hand/core.py",
+    "aic_hand/config.py",
+    "scripts/gui_smoke.py",
+    "scripts/setup_preview.py",
+    "scripts/sync_github.py",
+    "tests/test_sync.py",
+    "tests/test_mapping.py",
+    "tests/test_lifecycle.py",
+    "tests/test_camera_pipeline.py"
+  ],
+  "ascii_crlf_launchers": [
+    "sync_github.cmd",
+    "setup_preview.cmd",
+    "run_preview.cmd",
+    "run_demo.cmd"
+  ],
+  "gui_cjk_render_environment": "System Python 3.13 / Tk 8.6 / Pillow 11.1, demo GUI only. Model checks use Python 3.12 / pinned requirements.",
+  "status": "passed"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "camera": 0,
+  "width": 640,
+  "height": 480,
+  "mirror": true,
+  "swap_hands": false,
+  "mode": "single",
+  "single_axis": "left_elbow",
+  "min_handedness_score": 0.65,
+  "max_age_seconds": 0.35,
+  "smoothing_seconds": 0.12,
+  "deadband_degrees": 1.5,
+  "calibration": {
+    "Left": {"y_top": 0.2, "y_bottom": 0.8, "x_out": 0.85, "x_in": 0.5, "pinch_closed": 0.15, "pinch_open": 1.6},
+    "Right": {"y_top": 0.2, "y_bottom": 0.8, "x_out": 0.15, "x_in": 0.5, "pinch_closed": 0.15, "pinch_open": 1.6}
+  }
+}

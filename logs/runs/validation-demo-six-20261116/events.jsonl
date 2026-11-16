@@ -1,0 +1,2 @@
+{"event": "start", "elapsed_s": 0.0014, "source": "demo", "robot_connected": false}
+{"event": "stop", "elapsed_s": 6.0621, "reason": "完成指定帧数"}

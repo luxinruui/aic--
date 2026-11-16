@@ -1,0 +1,5 @@
+$ .venv/bin/python -m aic_hand --headless --demo --mode six --frames 180 --log-dir logs/runs/validation-demo-six-20261116
+
+{"status": 0, "source": "demo", "frames": 180, "log_directory": "logs/runs/validation-demo-six-20261116", "robot_connected": false}
+
+Exit code: 0

@@ -1,0 +1,62 @@
+$ .venv/bin/python -m unittest discover -s tests -v
+
+test_actual_streaming_model_with_one_simulated_blank_capture (test_camera_pipeline.CameraPipelineTests.test_actual_streaming_model_with_one_simulated_blank_capture) ... <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+<frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+/workspace/aic--/.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/workspace/aic--/.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/workspace/aic--/.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/workspace/aic--/.venv/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /workspace/aic--/.venv/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /workspace/aic--/.venv/lib/python3.12/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794800076.065629    3014 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1794800076.151554    3049 gl_context.cc:369] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1), renderer: llvmpipe (LLVM 19.1.7, 256 bits)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794800076.273006    3036 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1794800076.369593    3036 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+ok
+test_camera_open_failure_is_reported_and_device_released (test_camera_pipeline.CameraPipelineTests.test_camera_open_failure_is_reported_and_device_released) ... ok
+test_existing_log_directory_not_overwritten (test_lifecycle.LifecycleTests.test_existing_log_directory_not_overwritten) ... ok
+test_headless_entrypoint_records_complete_run (test_lifecycle.LifecycleTests.test_headless_entrypoint_records_complete_run) ... ok
+test_latest_queue_replaces_backlog (test_lifecycle.LifecycleTests.test_latest_queue_replaces_backlog) ... ok
+test_log_invalid_targets_are_empty_and_summary_is_honest (test_lifecycle.LifecycleTests.test_log_invalid_targets_are_empty_and_summary_is_honest) ... ok
+test_worker_stops_without_camera (test_lifecycle.LifecycleTests.test_worker_stops_without_camera) ... ok
+test_bad_calibration_is_rejected (test_mapping.MappingTests.test_bad_calibration_is_rejected) ... ok
+test_degenerate_palm_and_incomplete_hand_rejected (test_mapping.MappingTests.test_degenerate_palm_and_incomplete_hand_rejected) ... ok
+test_duplicate_and_reversed_frame_not_reused (test_mapping.MappingTests.test_duplicate_and_reversed_frame_not_reused) ... ok
+test_duplicate_identity_invalidates_only_ambiguous_arm (test_mapping.MappingTests.test_duplicate_identity_invalidates_only_ambiguous_arm) ... ok
+test_filter_reduces_step_without_exceeding_target (test_mapping.MappingTests.test_filter_reduces_step_without_exceeding_target) ... ok
+test_legacy_handedness_converted_for_unmirrored_input (test_mapping.MappingTests.test_legacy_handedness_converted_for_unmirrored_input) ... ok
+test_loss_and_reacquisition_does_not_reuse_old_filter (test_mapping.MappingTests.test_loss_and_reacquisition_does_not_reuse_old_filter) ... ok
+test_low_handedness_score_rejected (test_mapping.MappingTests.test_low_handedness_score_rejected) ... ok
+test_missing_hand_never_produces_zero_target (test_mapping.MappingTests.test_missing_hand_never_produces_zero_target) ... ok
+test_new_frame_id_cannot_refresh_an_old_sample (test_mapping.MappingTests.test_new_frame_id_cannot_refresh_an_old_sample) ... ok
+test_nonfinite_landmark_is_invalid (test_mapping.MappingTests.test_nonfinite_landmark_is_invalid) ... ok
+test_pinch_uses_image_aspect_ratio (test_mapping.MappingTests.test_pinch_uses_image_aspect_ratio) ... ok
+test_preview_mirroring_does_not_change_mapping (test_mapping.MappingTests.test_preview_mirroring_does_not_change_mapping) ... ok
+test_single_axis_does_not_fall_back_to_wrong_hand (test_mapping.MappingTests.test_single_axis_does_not_fall_back_to_wrong_hand) ... ok
+test_single_axis_uses_selected_hand_vertical_motion (test_mapping.MappingTests.test_single_axis_uses_selected_hand_vertical_motion) ... ok
+test_six_axis_endpoints_and_left_right_directions (test_mapping.MappingTests.test_six_axis_endpoints_and_left_right_directions) ... ok
+test_stale_future_and_invalid_clock_clear_targets (test_mapping.MappingTests.test_stale_future_and_invalid_clock_clear_targets) ... ok
+test_target_ranges_are_clamped (test_mapping.MappingTests.test_target_ranges_are_clamped) ... ok
+test_other_staged_changes_block_sync (test_sync.SyncTests.test_other_staged_changes_block_sync) ... ok
+test_sync_pushes_logs_but_does_not_sweep_code_or_media (test_sync.SyncTests.test_sync_pushes_logs_but_does_not_sweep_code_or_media) ... [main bcf26bd] Record hand preview run logs 2026-11-16 03:34
+ 1 file changed, 1 insertion(+)
+ create mode 100644 logs/runs/sample/events.jsonl
+To /tmp/tmp8uuiqaqz/remote.git
+   17dab37..bcf26bd  main -> main
+branch 'main' set up to track 'origin/main'.
+ok
+test_wrong_origin_blocks_before_staging (test_sync.SyncTests.test_wrong_origin_blocks_before_staging) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 2.433s
+
+OK
+Synced preview logs and settings to GitHub branch main.
+
+Exit code: 0

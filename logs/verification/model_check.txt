@@ -1,0 +1,32 @@
+$ .venv/bin/python -m aic_hand --check
+
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794800077.635712    3150 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1794800077.648694    3185 gl_context.cc:369] GL version: 3.2 (OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1), renderer: llvmpipe (LLVM 19.1.7, 256 bits)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1794800077.665490    3172 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1794800077.680751    3172 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+{
+  "app_version": "0.1.0",
+  "python": "3.12.14",
+  "mediapipe": "0.10.21",
+  "opencv": "4.11.0",
+  "numpy": "1.26.4",
+  "pillow": "11.3.0",
+  "models": {
+    "modules/palm_detection/palm_detection_full.tflite": {
+      "bytes": 2339846,
+      "sha256": "1b14e9422c6ad006cde6581a46c8b90dd573c07ab7f3934b5589e7cea3f89a54"
+    },
+    "modules/hand_landmark/hand_landmark_full.tflite": {
+      "bytes": 5478917,
+      "sha256": "11c272b891e1a99ab034208e23937a8008388cf11ed2a9d776ed3d01d0ba00e3"
+    }
+  },
+  "blank_frame_hands": 0,
+  "model_inference": "passed",
+  "camera_tested": false,
+  "robot_connected": false
+}
+
+Exit code: 0

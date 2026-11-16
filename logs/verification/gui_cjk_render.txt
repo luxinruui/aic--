@@ -1,0 +1,5 @@
+$ /usr/bin/python3 scripts/gui_smoke.py --screenshot docs/images/preview-demo.png
+
+GUI smoke passed: single/six modes, calibration guard, settings save, pause clears targets, restart and logs.
+
+Exit code: 0

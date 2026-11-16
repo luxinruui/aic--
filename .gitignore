@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+deliverables/
+*.zip
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.tmp
+
+# Runtime logs contain numeric observations and events only, and are versioned.
+# Camera images and video are never saved by the preview application.
