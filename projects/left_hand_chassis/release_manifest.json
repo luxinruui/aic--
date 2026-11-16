@@ -1,7 +1,7 @@
 {
   "version": "1.2.0",
   "date": "2026-11-16",
-  "python_syntax_files": 31,
+  "python_syntax_files": 32,
   "real_hardware_tested": false,
   "files": [
     {
@@ -11,8 +11,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 157,
-      "sha256": "1342ae20ac7b80f221cfddaef02ba226a242d3bc157935135090902f37adf294"
+      "bytes": 166,
+      "sha256": "9df5a5ec2815abf533449407de1034758a1bf07e3d0a5f516e0c016ab261301a"
     },
     {
       "path": "board_input_probe.py",
@@ -46,8 +46,8 @@
     },
     {
       "path": "left_hand_drive/__main__.py",
-      "bytes": 3447,
-      "sha256": "95ddc31a47d5641f0fdc8545a126e52619b53b01471b72401eff695571a7ddcf"
+      "bytes": 4154,
+      "sha256": "4b9042f7d9c3bd29852d91eaeb5e7e1bc2cbb2b1abaea583cd623e5dcf472390"
     },
     {
       "path": "left_hand_drive/capture.py",
@@ -66,13 +66,18 @@
     },
     {
       "path": "left_hand_drive/robot_gui.py",
-      "bytes": 5604,
-      "sha256": "dc031330046c20f17cb24b52a78d46c79853772c01693e7849e16b2e090254db"
+      "bytes": 6196,
+      "sha256": "31a642011b33df8670ffb57bbb148d7b93f6da8b00c7c88f8bcbd278e7fca271"
     },
     {
       "path": "left_hand_drive/runlog.py",
       "bytes": 3040,
       "sha256": "440905fe23dad9df361b8b7d1ca52a981523def0a4d5fb3bc628ed93488ffe4c"
+    },
+    {
+      "path": "logs/development/2026-11-16-deployment.md",
+      "bytes": 2918,
+      "sha256": "eda44625f7a43dac4ef2128df4966d2ae8d49064795c730b1366165ef1bbf704"
     },
     {
       "path": "logs/development/2026-11-16-mlk-relay.md",
@@ -88,6 +93,21 @@
       "path": "logs/development/2026-11-16.md",
       "bytes": 4433,
       "sha256": "5b7ba5e0d33b836ce3833aefd2e3b939f17e846da27160c496c70ab8856e016c"
+    },
+    {
+      "path": "logs/runs/camera-20261116-224755-208997/commands.csv",
+      "bytes": 93912,
+      "sha256": "fe9baf33db674e1150503c2898f5e17529a389bc3d1d89f0070c88f8aee0a8a6"
+    },
+    {
+      "path": "logs/runs/camera-20261116-224755-208997/events.jsonl",
+      "bytes": 5005,
+      "sha256": "ed2fe906015ab0b3c1a7bc8903f2c03ea943880036687e83e8dfa57a3bb37a9a"
+    },
+    {
+      "path": "logs/runs/camera-20261116-224755-208997/run.json",
+      "bytes": 322,
+      "sha256": "731b243f215dfd5dfef14781ad2fa92e0466c943f1f006950a95df77ac836a61"
     },
     {
       "path": "logs/runs/demo-20261116-154840-907215/calibration.json",
@@ -188,6 +208,16 @@
       "path": "logs/verification/camera_pipeline.json",
       "bytes": 341,
       "sha256": "6ea852bd3884edf3f555d0ac10971b35bb4d9dd0b2c9782271c7c77e9e7a1be3"
+    },
+    {
+      "path": "logs/verification/deployment_hardware_off_20261116.json",
+      "bytes": 295,
+      "sha256": "438bb427e30732460191e26981465841aa509b852e4e2094ee647bfd4d038645"
+    },
+    {
+      "path": "logs/verification/deployment_preview_off_20261116.json",
+      "bytes": 294,
+      "sha256": "b7fe4a3a5452d63f736f8b744910a4c6acea865e81d06156c6dc1408bc425c7a"
     },
     {
       "path": "logs/verification/gui_smoke.txt",
@@ -296,13 +326,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5223,
-      "sha256": "13a7f8d5bb5f75e359064d5bd8811b1de260f50ebfb1c59b82bcaecae9c53d2a"
+      "bytes": 5267,
+      "sha256": "669a00d38ed5e6c39141d090efa2d7ab97c613f6b33cd161060529d21e984969"
     },
     {
       "path": "README_BACKPACK.md",
-      "bytes": 6162,
-      "sha256": "1f7c4c3327b261e4a8890eb1bafa5d0270d5c47b2560b0b238071b1553157f14"
+      "bytes": 6867,
+      "sha256": "ad2b0d61985390961de0a6eccacbd63f23178316bc481bf332e96cc602421c87"
     },
     {
       "path": "README_MLK.md",
@@ -406,13 +436,18 @@
     },
     {
       "path": "scripts/build_packages.py",
-      "bytes": 4842,
-      "sha256": "03ef1436b48f74a5eb953cfb768a550af39bb8f4e2e12b604c7ceba97f1407a7"
+      "bytes": 5094,
+      "sha256": "b1baa99b56f8ed77413e012e27c93d2cb432f5eaf1a62c35ddc3bfd8ca9fb0f5"
     },
     {
       "path": "scripts/camera_probe.py",
       "bytes": 1562,
       "sha256": "45d12e4d46167367a537807744dd225b2e6bb12c713cf605eaadaad388a94c77"
+    },
+    {
+      "path": "scripts/check_connection.py",
+      "bytes": 2891,
+      "sha256": "51d553a500cce1867a711caa25852cd2207a3705b640ae45472b6331a886822c"
     },
     {
       "path": "scripts/gui_robot_smoke.py",
@@ -457,12 +492,12 @@
     {
       "path": "backpack_manifest.json",
       "bytes": 3908,
-      "sha256": "69aeb696d1dbbb7479e759a41c69c43c56a986c08d62c2864ccef272b537aa90"
+      "sha256": "aeae8c2814b041f5646bf82cb93056e4e1e44f6e02aec92cb55e73c8aa369c13"
     },
     {
       "path": "mlk_manifest.json",
       "bytes": 3039,
-      "sha256": "36cc55fc4e26ab7c7c83389a9ef76ebe0c5664381e0b60b6650a211ac426f542"
+      "sha256": "f7c558820492c29fd57079e5c5107372d6482cb1df31e8dc4b4de7bd95d71190"
     }
   ]
 }

@@ -15,6 +15,7 @@ class RobotApp(App):
         self.client = None
         self.connection_window = None
         self.network_message = None
+        self.last_network_log = None
         self.robot_config = load(Path(project) / "robot_config.json")
         super().__init__(root, project, demo, camera)
         root.title("左手底盘控制 · 机器人接入 v1.2")
@@ -98,6 +99,14 @@ class RobotApp(App):
         if self.client:
             status = self.client.status()
             hardware = status["hardware"]
+            if self.log:
+                self.log.info["hardware_connected"] |= bool(status["connected"] and hardware)
+                key = (id(self.log), status["connected"], hardware, status["state"], status.get("error", ""))
+                if key != self.last_network_log:
+                    self.log.event("robot_connection", connected=status["connected"],
+                                   hardware=hardware, state=status["state"],
+                                   error=status.get("error", ""))
+                    self.last_network_log = key
             if status["connected"]:
                 label = ("板卡/" if status.get("via")=="mlk-relay" else "") + ("实机" if hardware else "背包预览") + " · " + status["state"]
                 self.mode_label.configure(text=label)

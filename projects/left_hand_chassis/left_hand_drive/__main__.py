@@ -62,7 +62,19 @@ def main(argv=None):
     parser.add_argument("--check",action="store_true",help="check model on blank pixels; no camera")
     parser.add_argument("--camera",type=int,default=0)
     parser.add_argument("--robot",action="store_true",help="open the optional backpack TCP connection controls")
+    parser.add_argument("--host",help="connect to a backpack IPv4 at startup; control remains OFF")
+    parser.add_argument("--port",type=int,default=8768,help="backpack TCP port (default: 8768)")
     args=parser.parse_args(argv)
+    if args.host is not None:
+        if not args.robot or args.check or args.headless:
+            parser.error("--host requires interactive --robot mode")
+        from robot_link.protocol import host_address
+        try:
+            host_address(args.host)
+        except ValueError as error:
+            parser.error(str(error))
+    if not 1 <= args.port <= 65535:
+        parser.error("TCP port must be between 1 and 65535")
     if args.check:
         check_model()
         return 0
@@ -77,7 +89,9 @@ def main(argv=None):
     else:
         from .gui import App
     root=tk.Tk()
-    App(root,ROOT,demo=args.demo,camera=args.camera)
+    app=App(root,ROOT,demo=args.demo,camera=args.camera)
+    if args.host is not None:
+        app.connect_robot(args.host,args.port)
     root.mainloop()
     return 0
 

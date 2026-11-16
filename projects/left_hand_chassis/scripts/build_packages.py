@@ -15,7 +15,10 @@ def source_files():
         if not p.is_file(): continue
         r=p.relative_to(PROJECT)
         if any(x in ("runtime","deliverables","__pycache__",".venv",".git") or x.startswith(".chassis-venv") for x in r.parts): continue
-        if p.name in (".local-python.txt","release_manifest.json","backpack_manifest.json","mlk_manifest.json") or p.suffix in (".pyc",".tmp",".zip"): continue
+        if p.name.startswith(".local-") or p.name in ("release_manifest.json","backpack_manifest.json","mlk_manifest.json") or p.suffix in (".pyc",".tmp",".zip"): continue
+        # A running camera session is still being written. Export it after close.
+        if r.parts[:2] == ("logs", "runs") and len(r.parts) > 3:
+            if not (PROJECT / "logs" / "runs" / r.parts[2] / "run.json").is_file(): continue
         result.append(p)
     return sorted(result)
 

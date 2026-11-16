@@ -1,0 +1,33 @@
+{"at": "2026-11-16T22:47:55.311895+08:00", "event": "start", "source": "camera"}
+{"at": "2026-11-16T22:47:55.320904+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "摄像头启动中；随后依次采集三个参照"}
+{"at": "2026-11-16T22:48:00.360568+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:48:02.867349+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请让整只左手离开画面边缘"}
+{"at": "2026-11-16T22:48:12.524078+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:48:17.673845+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "请让整只左手离开画面边缘"}
+{"at": "2026-11-16T22:48:19.977391+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:07.456298+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T22:50:07.523097+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:07.586577+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T22:50:07.650447+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:07.714294+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T22:50:07.778019+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:07.839279+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T22:50:07.905264+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:07.969499+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T22:50:08.032112+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:08.680153+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "左右手分类置信度不足"}
+{"at": "2026-11-16T22:50:08.745324+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:08.993821+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:09.186123+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:09.381899+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:10.553849+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:10.699105+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:11.422821+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:11.617764+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:11.746540+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:11.810975+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:13.262431+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:13.327809+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "手掌过小或侧对镜头，请掌面朝向摄像头"}
+{"at": "2026-11-16T22:50:13.393325+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "未识别到左手；右手不控制"}
+{"at": "2026-11-16T22:50:13.986408+08:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "输入改变，请重新校准"}
+{"at": "2026-11-16T22:50:13.986408+08:00", "event": "stop", "reason": "输入关闭/切换"}

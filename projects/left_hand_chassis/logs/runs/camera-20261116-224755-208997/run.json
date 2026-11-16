@@ -1,0 +1,12 @@
+{
+  "version": "1.2.0",
+  "source": "camera",
+  "started_at": "2026-11-16T22:47:55.238986+08:00",
+  "platform": "Windows",
+  "python": "3.10.22",
+  "hardware_connected": false,
+  "image_recording": false,
+  "rows": 897,
+  "ended_at": "2026-11-16T22:50:13.986408+08:00",
+  "ended_reason": "输入关闭/切换"
+}
