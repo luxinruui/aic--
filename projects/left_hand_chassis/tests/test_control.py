@@ -76,6 +76,19 @@ class CalibrationTests(unittest.TestCase):
         for pose in (cal.fist,cal.opened):
             with self.assertRaises(CalibrationError): Calibration(pose,cal.fist,cal.opened)
 
+    def test_relaxed_neutral_match_never_arms_a_movement_gesture(self):
+        cal=calibration()
+        # A repeat of the half grip can differ from the captured finger position.
+        values=list(cal.neutral.fingers)
+        values[1]+=.27*(cal.opened.fingers[1]-cal.fist.fingers[1])
+        self.assertTrue(cal.at_neutral(Observation(1,0,"demo",tuple(values),17,True)))
+        # Even near a calibrated neutral pose, movement endpoints cannot arm.
+        middle=PoseReference(tuple(a+.45*(b-a) for a,b in zip(cal.fist.fingers,cal.opened.fingers)),17,"demo")
+        near=Calibration(middle,cal.fist,cal.opened)
+        for fraction in (.25,.75):
+            fingers=tuple(a+fraction*(b-a) for a,b in zip(cal.fist.fingers,cal.opened.fingers))
+            self.assertFalse(near.at_neutral(Observation(1,0,"demo",fingers,17,True)))
+
     def test_bad_endpoint_or_mixed_source_rejected(self):
         cal=calibration()
         with self.assertRaises(CalibrationError): Calibration(cal.neutral,cal.fist,cal.fist)

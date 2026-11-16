@@ -1,0 +1,19 @@
+{
+  "pc_tests": 27,
+  "passed": true,
+  "duration_seconds": 0.125,
+  "coverage": [
+    "repeat natural half grip within 0.30 of calibrated endpoint span",
+    "FIST and OPEN cannot arm even near the neutral reference",
+    "0.4 second neutral dwell and zero output on arm frame",
+    "old input, loss of focus and manual STOP"
+  ],
+  "native_windows_gui": {
+    "process_dpi_awareness": "per-monitor v2",
+    "camera_open_button_clicked_successfully": true,
+    "maximized_window_controls_and_status_visible": true,
+    "hardware_receiver_connected": true,
+    "startup_state": "DISARMED"
+  },
+  "nonzero_motion_tested": false
+}

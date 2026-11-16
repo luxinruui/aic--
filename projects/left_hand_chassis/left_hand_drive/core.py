@@ -132,7 +132,24 @@ class Calibration:
     def at_neutral(self, observation):
         u = self.normalized(observation.fingers)
         n = self.normalized(self.neutral.fingers)
-        return max(abs(a - b) for a, b in zip(u, n)) <= .20 and abs(wrap(observation.roll_deg - self.neutral.roll_deg)) <= 8
+        return (self.gesture(observation.fingers) == "NEUTRAL" and
+                max(abs(a - b) for a, b in zip(u, n)) <= .30 and
+                abs(wrap(observation.roll_deg - self.neutral.roll_deg)) <= 8)
+
+    def neutral_guidance(self, observation):
+        if self.gesture(observation.fingers) != "NEUTRAL":
+            return "请先自然半握；握拳或完全展开时不能启用"
+        if abs(wrap(observation.roll_deg - self.neutral.roll_deg)) > 8:
+            return "请把手掌回到①采集时的倾斜角度，先不要转向"
+        differences = [a - b for a, b in zip(self.normalized(observation.fingers),
+                                             self.normalized(self.neutral.fingers))]
+        index = max(range(5), key=lambda i: abs(differences[i]))
+        if abs(differences[index]) > .30:
+            name = ("拇指", "食指", "中指", "无名指", "小指")[index]
+            action = ("收拢" if differences[index] > 0 else "张开") if index == 0 else (
+                      "弯曲" if differences[index] > 0 else "伸直")
+            return "请把%s再%s一些，接近①静止位" % (name, action)
+        return "静止位已匹配，请稳定保持0.4秒"
 
 
 @dataclass(frozen=True)
@@ -237,6 +254,7 @@ class Controller:
             self.stop("掌面倾斜超过75度，请回正后重新启用")
             return self.command(now)
         if self.state == "ARMING":
+            self.reason = self.calibration.neutral_guidance(observation)
             if self.calibration.at_neutral(observation):
                 if self.neutral_since is None:
                     self.neutral_since = observation.sampled_at

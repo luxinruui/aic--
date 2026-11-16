@@ -84,6 +84,17 @@ def main(argv=None):
         run_demo()
         return 0
     import tkinter as tk
+    if sys.platform == "win32":
+        # Let Windows render this application's pixels at the current monitor DPI.
+        # This prevents bitmap scaling from hiding controls on a smaller monitor.
+        import ctypes
+        try:
+            ctypes.windll.user32.SetProcessDpiAwarenessContext(ctypes.c_void_p(-4))
+        except (AttributeError, OSError):
+            try:
+                ctypes.windll.shcore.SetProcessDpiAwareness(2)
+            except (AttributeError, OSError):
+                pass
     if args.robot:
         from .robot_gui import RobotApp as App
     else:

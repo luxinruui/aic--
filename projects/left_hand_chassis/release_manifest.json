@@ -46,8 +46,8 @@
     },
     {
       "path": "left_hand_drive/__main__.py",
-      "bytes": 4154,
-      "sha256": "4b9042f7d9c3bd29852d91eaeb5e7e1bc2cbb2b1abaea583cd623e5dcf472390"
+      "bytes": 4659,
+      "sha256": "adaa7142710a0987f3de23795464e8191f2eee380a1f3c27ae0152a478a4636f"
     },
     {
       "path": "left_hand_drive/capture.py",
@@ -56,8 +56,8 @@
     },
     {
       "path": "left_hand_drive/core.py",
-      "bytes": 12533,
-      "sha256": "c9616e420f92b4547b22ac7a27ab4dd3f0fccd5afe71fc2186fd258437cb492f"
+      "bytes": 13691,
+      "sha256": "21ff484d60b3fe2f3f8946682ce34f2c4c999583224cb172ebf72c4f9b027251"
     },
     {
       "path": "left_hand_drive/gui.py",
@@ -81,8 +81,8 @@
     },
     {
       "path": "logs/development/2026-11-16-deployment.md",
-      "bytes": 4153,
-      "sha256": "cc6b476b30776627354426ce5ae4016a87b2a5c428c47dee99895685988dd87c"
+      "bytes": 5900,
+      "sha256": "61e21acbfc267c8fa7ab6ab79a8d80bce12c30f451f6062ccfd9b3c345175f3a"
     },
     {
       "path": "logs/development/2026-11-16-mlk-relay.md",
@@ -215,9 +215,24 @@
       "sha256": "6ea852bd3884edf3f555d0ac10971b35bb4d9dd0b2c9782271c7c77e9e7a1be3"
     },
     {
+      "path": "logs/verification/deployment_arming_regression_20261116.json",
+      "bytes": 629,
+      "sha256": "5589d06c0c4de9e09efbc6ed64b6f1d21985d388d11cc6e9d0904bbf230a7303"
+    },
+    {
+      "path": "logs/verification/deployment_calibration_20261116.json",
+      "bytes": 443,
+      "sha256": "8505c8dda066065b1831492b2ea3ceba1174da1e337d03ad9e5b5e7261427a9d"
+    },
+    {
       "path": "logs/verification/deployment_hardware_off_20261116.json",
       "bytes": 295,
       "sha256": "438bb427e30732460191e26981465841aa509b852e4e2094ee647bfd4d038645"
+    },
+    {
+      "path": "logs/verification/deployment_hardware_off_long_20261116.json",
+      "bytes": 296,
+      "sha256": "037e91d2f068a9c9b8f07c5ed5524ad90434ea0c1d69626d966667a16a7452fc"
     },
     {
       "path": "logs/verification/deployment_preview_off_20261116.json",
@@ -331,8 +346,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5267,
-      "sha256": "669a00d38ed5e6c39141d090efa2d7ab97c613f6b33cd161060529d21e984969"
+      "bytes": 5414,
+      "sha256": "1a922e109c521e9cadab82ce3740a64b9f7a9c3bd62585ac660c77326d9dce20"
     },
     {
       "path": "README_BACKPACK.md",
@@ -486,8 +501,8 @@
     },
     {
       "path": "tests/test_control.py",
-      "bytes": 9126,
-      "sha256": "b9ac82bce95ae011f47d01a1c5103f7c5b1d45a5802d070d59c72a70ba03c57a"
+      "bytes": 9962,
+      "sha256": "672fb7e6c685537c21ed536e584821567015b6df4042b6c4f45958653201b502"
     },
     {
       "path": "tests/test_lifecycle.py",
@@ -497,7 +512,7 @@
     {
       "path": "backpack_manifest.json",
       "bytes": 4084,
-      "sha256": "e8de4b90038600954c366192d897872d01c54803a807601f828ace2913582b25"
+      "sha256": "006a6b7e07bb01e0f9017bc3eb1ea3734505d300152cae6c017b59b44135b393"
     },
     {
       "path": "mlk_manifest.json",
