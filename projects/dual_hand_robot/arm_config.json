@@ -1,0 +1,118 @@
+{
+  "calibrated": true,
+  "waist_mode": "hold",
+  "serial": {
+    "port": "/dev/ttyS0",
+    "baudrate": 115200
+  },
+  "control_hz": 20,
+  "duration_ms": 50,
+  "max_position_rate": 1200,
+  "max_acceleration": 4800,
+  "target_deadband": 20,
+  "max_sample_age_ms": 350,
+  "stale_timeout": 0.35,
+  "warmup_seconds": 0.2,
+  "resume_seconds": 0.1,
+  "baseline_positions": {
+    "1": 926,
+    "2": 2048,
+    "3": 2256,
+    "4": 1569,
+    "31": 3110,
+    "32": 2048,
+    "33": 2224,
+    "34": 2040
+  },
+  "axes": {
+    "left_elbow": {
+      "servo_id": 1,
+      "human_degrees": [
+        0,
+        90,
+        180
+      ],
+      "positions": [
+        3676,
+        2018,
+        926
+      ],
+      "min_position": 926,
+      "max_position": 3676,
+      "initial_position": 926
+    },
+    "right_elbow": {
+      "servo_id": 31,
+      "human_degrees": [
+        0,
+        90,
+        180
+      ],
+      "positions": [
+        400,
+        1897,
+        3110
+      ],
+      "min_position": 400,
+      "max_position": 3110,
+      "initial_position": 3110
+    },
+    "left_upper": {
+      "servo_id": 3,
+      "human_degrees": [
+        0,
+        90
+      ],
+      "positions": [
+        2256,
+        880
+      ],
+      "min_position": 880,
+      "max_position": 2256,
+      "initial_position": 2256
+    },
+    "right_upper": {
+      "servo_id": 33,
+      "human_degrees": [
+        0,
+        90
+      ],
+      "positions": [
+        2224,
+        3408
+      ],
+      "min_position": 2224,
+      "max_position": 3408,
+      "initial_position": 2224
+    },
+    "left_lift": {
+      "servo_id": 4,
+      "human_degrees": [
+        0,
+        90
+      ],
+      "positions": [
+        3098,
+        1569
+      ],
+      "min_position": 1569,
+      "max_position": 3098,
+      "initial_position": 1569
+    },
+    "right_lift": {
+      "servo_id": 34,
+      "human_degrees": [
+        0,
+        90
+      ],
+      "positions": [
+        589,
+        2040
+      ],
+      "min_position": 589,
+      "max_position": 2040,
+      "initial_position": 2040
+    }
+  },
+  "tracking_loss_timeout": 2
+}

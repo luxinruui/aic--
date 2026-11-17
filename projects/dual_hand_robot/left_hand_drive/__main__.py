@@ -1,0 +1,125 @@
+import argparse
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def check_model():
+    import importlib.metadata as metadata
+    import cv2
+    import mediapipe as mp
+    import numpy as np
+    import tkinter
+    if not hasattr(mp, "solutions"):
+        raise RuntimeError("Use the project environment: MediaPipe 0.10.21 is required")
+    with mp.solutions.hands.Hands(static_image_mode=True, model_complexity=1, max_num_hands=2) as detector:
+        result = detector.process(np.zeros((480,640,3),dtype=np.uint8))
+        assert not result.multi_hand_landmarks
+    print("CPU hand model loaded; blank-frame inference passed. No camera opened.")
+    for name in ("mediapipe","opencv-contrib-python","numpy","Pillow"):
+        print(name + "=" + metadata.version(name))
+
+
+def run_demo(frames=280):
+    from .capture import demo_observation
+    from .core import Calibration, Controller, PoseReference
+    from .runlog import RunLog
+    controller=Controller()
+    cal=Calibration(*(PoseReference(demo_observation(1,0,g).fingers,0,"demo") for g in ("NEUTRAL","FIST","OPEN")))
+    controller.set_calibration(cal)
+    controller.enable()
+    log=RunLog(ROOT,"validation-demo")
+    log.calibration(cal)
+    seen=set()
+    try:
+        for i in range(frames):
+            now=100+i*.05
+            gesture="NEUTRAL" if i<20 or i>=230 else "FIST" if i<120 else "OPEN"
+            roll=0 if i<20 else 28 if i<85 else -28 if i<180 else 0
+            observation=demo_observation(i+1,now,gesture,roll)
+            controller.update(observation,now)
+            command=controller.tick(now)
+            log.record(command,observation)
+            if command.forward>0: seen.add("forward")
+            if command.forward<0: seen.add("backward")
+            if command.yaw_left>0: seen.add("left")
+            if command.yaw_left<0: seen.add("right")
+        command=controller.tick(now+.4)
+        assert not command.enabled and command.forward==command.yaw_left==0
+        log.record(command)
+        assert seen=={"forward","backward","left","right"},seen
+        print("Synthetic lifecycle passed:",", ".join(sorted(seen)),"+ stale-input STOP")
+        print("Numeric run log:",log.path.relative_to(ROOT))
+    finally:
+        log.close("synthetic validation completed")
+
+
+def main(argv=None):
+    parser=argparse.ArgumentParser(description="PC hand control preview with optional backpack TCP link")
+    parser.add_argument("--demo",action="store_true",help="synthetic input; no camera")
+    parser.add_argument("--headless",action="store_true",help="run deterministic synthetic validation")
+    parser.add_argument("--check",action="store_true",help="check model on blank pixels; no camera")
+    parser.add_argument("--camera",type=int,default=0)
+    parser.add_argument("--upper",action="store_true",help="PC-only symmetric right-hand upper-body preview")
+    parser.add_argument("--dual-robot",action="store_true",help="independent dual-hand robot service on TCP8770")
+    parser.add_argument("--robot",action="store_true",help="open the optional backpack TCP connection controls")
+    parser.add_argument("--host",help="connect to a backpack IPv4 at startup; control remains OFF")
+    parser.add_argument("--port",type=int,default=8768,help="backpack TCP port (default: 8768)")
+    args=parser.parse_args(argv)
+    if args.upper and (args.robot or args.host is not None or args.dual_robot):
+        parser.error("--upper is PC preview only and cannot connect to a robot")
+    if args.dual_robot and (args.robot or args.check or args.headless):
+        parser.error("--dual-robot requires interactive mode and cannot use the legacy --robot")
+    if args.host is not None:
+        if not (args.robot or args.dual_robot) or args.check or args.headless:
+            parser.error("--host requires interactive --robot mode")
+        from robot_link.protocol import host_address
+        try:
+            host_address(args.host)
+        except ValueError as error:
+            parser.error(str(error))
+    if not 1 <= args.port <= 65535:
+        parser.error("TCP port must be between 1 and 65535")
+    if args.check:
+        check_model()
+        return 0
+    if args.headless:
+        if not args.demo:
+            parser.error("--headless requires --demo; real camera validation is interactive")
+        if args.upper:
+            from .upper_demo import run_demo as run_upper_demo
+            run_upper_demo(ROOT)
+        else:
+            run_demo()
+        return 0
+    import tkinter as tk
+    if sys.platform == "win32":
+        # Let Windows render this application's pixels at the current monitor DPI.
+        # This prevents bitmap scaling from hiding controls on a smaller monitor.
+        import ctypes
+        try:
+            ctypes.windll.user32.SetProcessDpiAwarenessContext(ctypes.c_void_p(-4))
+        except (AttributeError, OSError):
+            try:
+                ctypes.windll.shcore.SetProcessDpiAwareness(2)
+            except (AttributeError, OSError):
+                pass
+    if args.dual_robot:
+        from .dual_gui import RobotApp as App
+        if args.port == 8768:
+            args.port = 8770
+    elif args.robot:
+        from .robot_gui import RobotApp as App
+    else:
+        from .gui import App
+    root=tk.Tk()
+    app=App(root,ROOT,demo=args.demo,camera=args.camera,**({"upper": True} if args.upper else {}))
+    if args.host is not None:
+        app.connect_robot(args.host,args.port)
+    root.mainloop()
+    return 0
+
+
+if __name__=="__main__":
+    raise SystemExit(main())

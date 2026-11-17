@@ -1,0 +1,10 @@
+.venv/
+.chassis-venv*/
+__pycache__/
+*.py[cod]
+runtime/
+.local-python.txt
+.local-*
+*.tmp
+*.zip
+# Numeric run logs and development records are intentionally versioned.

@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-17T12:31:24.719393+00:00",
+  "check": "OFF only",
+  "passed": true,
+  "acknowledgements": 24,
+  "hardware": false,
+  "baseline_confirmed": true,
+  "arm_segments_added": 0,
+  "nonzero_chassis_commands": 0,
+  "profile": "4a15394412d259fcba41b64deab3a9e195b82be5ec1fb21fad880e46977541a6",
+  "scope": "cloud-local CLI receiver only; not the physical backpack",
+  "robot_connected": false
+}

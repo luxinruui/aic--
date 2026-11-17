@@ -1,0 +1,57 @@
+{
+  "version": "1.2.0",
+  "source": "validation-dual-demo",
+  "started_at": "2026-11-17T12:31:28.603508+00:00",
+  "platform": "Linux",
+  "python": "3.12.14",
+  "hardware_connected": false,
+  "image_recording": false,
+  "rows": 181,
+  "upper_preview_only": true,
+  "upper_settings": {
+    "ranges": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        0.0,
+        60.0
+      ],
+      [
+        0.0,
+        120.0
+      ],
+      [
+        0.0,
+        90.0
+      ],
+      [
+        0.0,
+        90.0
+      ],
+      [
+        0.0,
+        120.0
+      ]
+    ],
+    "active": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "reverse": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "speed": 30.0
+  },
+  "upper_rows": 181,
+  "ended_at": "2026-11-17T12:31:28.614954+00:00",
+  "ended_reason": "synthetic dual-hand validation completed"
+}

@@ -1,0 +1,13 @@
+{"at": "2026-11-17T12:31:28.603684+00:00", "event": "start", "source": "validation-dual-demo"}
+{"at": "2026-11-17T12:31:28.603833+00:00", "event": "upper_preview_start", "settings": {"ranges": [[0.0, 60.0], [0.0, 60.0], [0.0, 120.0], [0.0, 90.0], [0.0, 90.0], [0.0, 120.0]], "active": [true, true, true, true, true], "reverse": [false, false, false, false, false], "speed": 30.0}}
+{"at": "2026-11-17T12:31:28.603952+00:00", "event": "calibrated", "source": "demo"}
+{"at": "2026-11-17T12:31:28.604037+00:00", "event": "upper_calibrated", "source": "demo"}
+{"at": "2026-11-17T12:31:28.604124+00:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "静止位已匹配，请稳定保持0.4秒"}
+{"at": "2026-11-17T12:31:28.604156+00:00", "event": "upper_state", "state": "ARMING", "enabled": false, "reason": "右手参考姿态已匹配，请稳定保持0.5秒"}
+{"at": "2026-11-17T12:31:28.604542+00:00", "event": "state", "enabled": true, "gesture": "NEUTRAL", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T12:31:28.604618+00:00", "event": "upper_state", "state": "ON", "enabled": true, "reason": "上肢软件预览已启用；拇指联动双大臂"}
+{"at": "2026-11-17T12:31:28.605496+00:00", "event": "state", "enabled": true, "gesture": "FIST", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T12:31:28.609632+00:00", "event": "state", "enabled": true, "gesture": "OPEN", "reason": "已启用：握拳前进、展开后退、左右倾斜转向"}
+{"at": "2026-11-17T12:31:28.614892+00:00", "event": "upper_state", "state": "OFF", "enabled": false, "reason": "没有新鲜右手采样，已暂停上肢"}
+{"at": "2026-11-17T12:31:28.614921+00:00", "event": "state", "enabled": false, "gesture": "NEUTRAL", "reason": "没有新鲜左手采样，已暂停"}
+{"at": "2026-11-17T12:31:28.614944+00:00", "event": "stop", "reason": "synthetic dual-hand validation completed"}

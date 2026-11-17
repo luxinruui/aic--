@@ -1,0 +1,148 @@
+{
+  "source_thread": "01a11a51-67e2-7113-84b8-8a891d2ecde6",
+  "source_host": "local",
+  "source_title": "连接人体识别数据与机器人动作",
+  "source_path": "robot_integration/backpack_arms6/arm_config.json",
+  "configuration": {
+    "calibrated": true,
+    "waist_mode": "hold",
+    "serial": {
+      "port": "/dev/ttyS0",
+      "baudrate": 115200
+    },
+    "control_hz": 20,
+    "duration_ms": 50,
+    "max_position_rate": 1200,
+    "max_acceleration": 4800,
+    "target_deadband": 20,
+    "max_sample_age_ms": 350,
+    "stale_timeout": 0.35,
+    "warmup_seconds": 0.2,
+    "resume_seconds": 0.1,
+    "baseline_positions": {
+      "1": 926,
+      "2": 2048,
+      "3": 2256,
+      "4": 1569,
+      "31": 3110,
+      "32": 2048,
+      "33": 2224,
+      "34": 2040
+    },
+    "axes": {
+      "left_elbow": {
+        "servo_id": 1,
+        "human_degrees": [
+          0,
+          90,
+          180
+        ],
+        "positions": [
+          3676,
+          2018,
+          926
+        ],
+        "min_position": 926,
+        "max_position": 3676,
+        "initial_position": 926
+      },
+      "right_elbow": {
+        "servo_id": 31,
+        "human_degrees": [
+          0,
+          90,
+          180
+        ],
+        "positions": [
+          400,
+          1897,
+          3110
+        ],
+        "min_position": 400,
+        "max_position": 3110,
+        "initial_position": 3110
+      },
+      "left_upper": {
+        "servo_id": 3,
+        "human_degrees": [
+          0,
+          90
+        ],
+        "positions": [
+          2256,
+          880
+        ],
+        "min_position": 880,
+        "max_position": 2256,
+        "initial_position": 2256
+      },
+      "right_upper": {
+        "servo_id": 33,
+        "human_degrees": [
+          0,
+          90
+        ],
+        "positions": [
+          2224,
+          3408
+        ],
+        "min_position": 2224,
+        "max_position": 3408,
+        "initial_position": 2224
+      },
+      "left_lift": {
+        "servo_id": 4,
+        "human_degrees": [
+          0,
+          90
+        ],
+        "positions": [
+          3098,
+          1569
+        ],
+        "min_position": 1569,
+        "max_position": 3098,
+        "initial_position": 1569
+      },
+      "right_lift": {
+        "servo_id": 34,
+        "human_degrees": [
+          0,
+          90
+        ],
+        "positions": [
+          589,
+          2040
+        ],
+        "min_position": 589,
+        "max_position": 2040,
+        "initial_position": 2040
+      }
+    },
+    "tracking_loss_timeout": 2
+  },
+  "wire_layout": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "20",
+    "21",
+    "31",
+    "32",
+    "33",
+    "34",
+    "duration_ms"
+  ],
+  "vendor_device": 7,
+  "vendor_command": 95,
+  "waist_hold_positions": [
+    0,
+    0
+  ],
+  "fixed_servo_positions": {
+    "2": 2048,
+    "32": 2048
+  },
+  "golden_four_axis_first_frame": "f55f075f16e2070008d00821060000000069070008b008f807320032"
+}
