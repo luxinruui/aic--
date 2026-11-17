@@ -24,8 +24,13 @@ class RobotApp(App):
         self.gains_changed()
         root.title("双手机器人联控 · 独立项目 v1.0")
         self.subtitle.configure(text="独立背包联控 · 拇指联动双大臂 · 四指对称分组 · 空格全部暂停")
-        self.mode_label.configure(text="未连接双手背包服务 · 8770")
-        ttk.Button(self.toolbar,text="连接背包…",command=self.connection_dialog).pack(side="right",padx=4)
+        self.mode_label.pack_forget()
+        self.connection_bar = ttk.Frame(self.toolbar.master)
+        self.connection_bar.pack(fill="x",after=self.toolbar,pady=(4,0))
+        self.connect_button = ttk.Button(self.connection_bar,text="连接背包…",command=self.connection_dialog)
+        self.connect_button.pack(side="left")
+        self.mode_label = ttk.Label(self.connection_bar,text="未连接双手背包服务 · 8770",foreground="#68d7c0")
+        self.mode_label.pack(side="right")
         root.after(50,self.poll_network)
 
     def write_snapshot(self, command):

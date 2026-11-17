@@ -53,6 +53,9 @@ def main():
                 root.update();time.sleep(.01)
         try:
             root.focus_force();pump(.2)
+            root.geometry("1050x720");root.update()
+            assert app.connect_button.winfo_ismapped()
+            assert app.connect_button.winfo_width() >= app.connect_button.winfo_reqwidth()
             app.connection_dialog();root.update()
             assert app.connection_window.winfo_exists()
             app.connection_window.destroy();root.focus_force()
