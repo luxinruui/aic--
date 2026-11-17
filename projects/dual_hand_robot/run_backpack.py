@@ -29,6 +29,9 @@ class Journal:
 
 
 def main(argv=None):
+    for stream in (sys.stdout,sys.stderr):
+        if hasattr(stream,"reconfigure"):
+            stream.reconfigure(encoding="utf-8",errors="backslashreplace")
     parser = argparse.ArgumentParser(description="Independent dual-hand TCP8770 receiver; default NO UART")
     parser.add_argument("--drive", action="store_true")
     parser.add_argument("--confirm-arm-baseline", action="store_true", help="operator has set the original eight-slot baseline")

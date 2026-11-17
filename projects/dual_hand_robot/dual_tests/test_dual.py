@@ -45,7 +45,7 @@ class WireAndCalibrationTests(unittest.TestCase):
 
     def test_historical_golden_frame_and_fixed_waist_slots(self):
         positions = {"1":2018,"3":2256,"4":1569,"31":1897,"33":2224,"34":2040}
-        evidence = json.loads((ROOT/"docs/reference/aic_six_axis_evidence.json").read_text())
+        evidence = json.loads((ROOT/"docs/reference/aic_six_axis_evidence.json").read_text(encoding="utf-8"))
         frame = encode_arms(positions,include_fixed=True)
         self.assertEqual(frame.hex(), evidence["golden_four_axis_first_frame"])
         self.assertEqual(struct.unpack("<11H",frame[5:-1]),(2018,2048,2256,1569,0,0,1897,2048,2224,2040,50))
@@ -84,7 +84,7 @@ class WireAndCalibrationTests(unittest.TestCase):
             bus.write_arms({"1":1000})
             bus.close()
         for path in (ROOT/"dual_link").glob("*.py"):
-            ast.parse(path.read_text(),feature_version=(3,8))
+            ast.parse(path.read_text(encoding="utf-8"),feature_version=(3,8))
 
     def test_partial_uart_write_latches_and_never_retries_motion(self):
         serial = FakeSerial()

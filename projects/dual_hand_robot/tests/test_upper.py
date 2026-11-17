@@ -184,12 +184,12 @@ class UpperTests(unittest.TestCase):
             self.c.stop()
             log.record_upper(self.c.command(self.now+.001))
             log.close("test")
-            with (log.path/"upper_commands.csv").open() as stream:
+            with (log.path/"upper_commands.csv").open(encoding="utf-8",newline="") as stream:
                 rows = list(csv.DictReader(stream))
             self.assertEqual(len(rows), 2)
             self.assertEqual(rows[-1]["enabled"], "False")
             self.assertTrue(all(rows[-1][key] == "" for key in AXES))
-            info = json.loads((log.path/"run.json").read_text())
+            info = json.loads((log.path/"run.json").read_text(encoding="utf-8"))
             self.assertTrue(info["upper_preview_only"])
             self.assertFalse(info["hardware_connected"])
             self.assertFalse(info["image_recording"])
