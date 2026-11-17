@@ -13,7 +13,8 @@
     "robot_toolbar_layout": "connection button fully visible at1050x720 in its own row; calibration/STOP remain fixed below the scrolling panels",
     "synthetic_six_target_lifecycle": "passed",
     "offline_pyserial_check": "passed with python -S; verified wheel, no UART opened",
-    "local_cli_preview_off": "passed; 24 ACK, zero added arm segments and zero nonzero chassis commands; cloud-local service only"
+    "local_cli_preview_off": "passed; 24 ACK, zero added arm segments and zero nonzero chassis commands; cloud-local service only",
+    "packaged_import_check": "passed on cloud-local extracted backpack ZIP: manifest, offline dependencies, 18 self-tests, loopback preview OFF; not physical backpack"
   },
   "hardware": {
     "nomachine_transfer_done": false,

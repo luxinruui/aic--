@@ -21,12 +21,13 @@
    ```sh
    cd "$HOME/Desktop/aic_dual_hand_robot_20261117"
    python3 install_backpack.py --check
-   python3 -S run_backpack.py --check-deps
-   python3 -S run_backpack.py --self-test
+   python3 -S verify_backpack.py
    sh start_preview.sh
    ```
 
-   这些检查和PREVIEW服务不打开UART；离线包带已校验的官方pySerial3.5 wheel，不需要背包联网或pip。
+   `verify_backpack.py` 核对文件清单、离线依赖、18项自检，再用仅本机可达的临时端口执行5秒OFF链路检查并停止。结果在新目录 `logs/verification/import-check-*/`，包含summary、测试文本与接收端日志。它不占用8770、不停止已有接收端；回环预览检查不等于电脑到背包链路或实机运动验收。
+
+   这些检查和PREVIEW服务不打开UART；离线包带已校验的官方pySerial3.5 wheel，不需要背包联网或pip。`scripts/check_connection.py` 也已包含在背包包内，可在需要时独立检查8770。
 
 4. Windows解压电脑包 `dual_hand_pc_v1_20261117.zip`，双击新文件夹的 `run_robot.cmd`，连接背包IPv4、TCP8770。初始应显示“背包预览 · DISARMED”，没有运动。可用以下命令单独检查OFF链路：
 

@@ -36,6 +36,16 @@ jobs:
       - if: runner.os == 'Windows'
         run: python scripts/gui_robot_smoke.py
       - run: python scripts/build_packages.py
+      - name: Verify imported backpack package without UART
+        shell: python
+        run: |
+          from pathlib import Path
+          import subprocess, sys, tempfile, zipfile
+          with tempfile.TemporaryDirectory() as directory:
+              with zipfile.ZipFile('releases/dual_hand_backpack_v1_20261117.zip') as archive:
+                  archive.extractall(directory)
+              package = Path(directory)/'aic_dual_hand_robot_20261117'
+              subprocess.run([sys.executable, '-S', str(package/'verify_backpack.py')], check=True)
   backpack38:
     runs-on: ubuntu-22.04
     defaults:

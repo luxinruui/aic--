@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-17T14:13:45.097133+00:00",
+  "passed": true,
+  "scope": "package/software/loopback-preview",
+  "hardware": false,
+  "serial_opened": false,
+  "motion_tested": false,
+  "python": "3.12.14",
+  "system": "Linux",
+  "architecture": "x86_64",
+  "checks": {
+    "package_files": 32,
+    "offline-dependencies": true,
+    "self-test": true,
+    "loopback_off": {
+      "at": "2026-11-17T14:13:51.845973+00:00",
+      "check": "OFF only",
+      "passed": true,
+      "acknowledgements": 99,
+      "hardware": false,
+      "baseline_confirmed": true,
+      "arm_segments_added": 0,
+      "nonzero_chassis_commands": 0,
+      "profile": "4a15394412d259fcba41b64deab3a9e195b82be5ec1fb21fad880e46977541a6"
+    }
+  },
+  "execution_location": "cloud-local extracted backpack package; not physical backpack",
+  "nomachine_transfer_done": false,
+  "package_sha256": "8b3975f64e499a7dddaf705932ef33d6c6f04671b23de38c4f8e45897c8d55d4"
+}
