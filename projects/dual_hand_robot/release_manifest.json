@@ -1,16 +1,16 @@
 {
   "pc": {
     "path": "releases/dual_hand_pc_v1_20261117.zip",
-    "bytes": 192584,
-    "sha256": "a6b0c9fdafa4c8734c03326950caff96ab86e96f35122d7b3ff3028fed83f6c3",
-    "files": 58,
+    "bytes": 195564,
+    "sha256": "487c3dd264c9d0487d88fc38fc9b7cbb89aa631ddedb3b9022e12a16b0027339",
+    "files": 59,
     "crc_readback": true
   },
   "backpack": {
     "path": "releases/dual_hand_backpack_v1_20261117.zip",
-    "bytes": 136788,
-    "sha256": "8b3975f64e499a7dddaf705932ef33d6c6f04671b23de38c4f8e45897c8d55d4",
-    "files": 33,
+    "bytes": 139445,
+    "sha256": "77e6f1d726daac1293624851458ec3a2e53662d6029b1c04dc3abafc013378c6",
+    "files": 34,
     "crc_readback": true
   }
 }

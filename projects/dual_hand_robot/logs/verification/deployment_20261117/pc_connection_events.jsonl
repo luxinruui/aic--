@@ -1,0 +1,2 @@
+{"at": "2026-11-17T23:42:54.913554+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "DISARMED", "reason": "电脑暂停", "error": ""}
+{"at": "2026-11-17T23:43:27.277310+08:00", "event": "upper_state", "state": "OFF", "enabled": false, "reason": "模式已改变，请重新启用"}

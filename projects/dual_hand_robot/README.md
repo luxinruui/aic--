@@ -4,7 +4,7 @@
 
 本项目从底盘已验收版本 `681e10295bc56d7816d46e33420df715ac036320` 派生，旧 `projects/left_hand_chassis` 和旧入口不作为本项目发布内容修改。新服务使用 **TCP8770**、应用标识 `aic-dual-hand-robot/1`，不混用旧底盘8768、六轴8765或统一控制8767。
 
-当前软件检查使用真实本机TCP、真实编码器和模拟串口，未连接本次实机UART，也尚未从云端通过用户本机Windows的NoMachine导入背包。部署步骤见 [NoMachine导入说明](README_NOMACHINE.md)。
+2026-11-17已通过NoMachine完成现场部署，电脑与背包TCP8770及真实UART的OFF检查通过。当前用户尚未设置上肢基准，接收端保持基准未确认、全系统暂停，未进行本项目实机动作验收。现场路径和运行方法见 [本机运行说明](RUN_THIS_ROBOT.md)，通用导入步骤见 [NoMachine导入说明](README_NOMACHINE.md)。
 
 ## 电脑端
 

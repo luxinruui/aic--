@@ -7,6 +7,7 @@ import tempfile
 import threading
 import time
 import tkinter as tk
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(ROOT))
@@ -98,11 +99,20 @@ def main():
             count = controller.issued_arm_segments
             for _ in range(3):feed(hands)
             assert controller.issued_arm_segments == count
+            for error in (KeyError("popdown"), tk.TclError("focus window disappeared")):
+                with patch.object(root,"focus_get",side_effect=error):
+                    app.check_focus()
+                    seq = app.controller.seq
+                    pump(.18)
+                    assert app.controller.seq > seq, "Focus transition stopped the GUI polling loop"
+                assert app.upper_preview.controller.state == "OFF"
+                assert controller.issued_arm_segments == count
             assert not failures,failures
             app.worker = None
             app.close_input()
             print("Dual robot Tk + actual TCP + real encoder/FakeSerial passed: software reference takeover,")
             print("right-only camera-shaped fixture, elbow movement, hardware-demo rejection and SPACE STOP.")
+            print("Native popdown / disappearing focus safely pauses without stopping the polling loop.")
             print("No physical camera or UART used.")
         finally:
             app.worker = None

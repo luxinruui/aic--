@@ -180,8 +180,17 @@ class App:
             if self.upper_preview:
                 self.upper_preview.controller.reason = self.controller.reason
 
+    def control_window_focused(self):
+        try:
+            focus = self.root.focus_get()
+            return focus is not None and focus.winfo_toplevel() is self.root
+        except (KeyError, tk.TclError):
+            # Native ttk popdowns can own focus without a Python widget object.
+            # Treat that transition as unfocused; keep the polling loop alive.
+            return False
+
     def check_focus(self):
-        if self.root.focus_displayof() is None:
+        if not self.control_window_focused():
             self.stop("窗口失去焦点，已暂停")
 
     def close_input(self):
@@ -399,8 +408,7 @@ class App:
                 self.upper_preview.observe(observation,now)
         if not self.demo and self.last_frame_at is not None and now-self.last_frame_at>.30:
             self.image=None
-        focus = self.root.focus_get()
-        focused = focus is not None and focus.winfo_toplevel() is self.root
+        focused = self.control_window_focused()
         command=self.controller.tick(now,focused)
         if self.upper_preview:
             self.upper_preview.tick(now,focused)

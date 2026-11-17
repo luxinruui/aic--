@@ -1,0 +1,22 @@
+{
+  "pc_tests": {
+    "passed": true,
+    "seconds": 1.266
+  },
+  "receiver_tests": {
+    "passed": true,
+    "seconds": 2.312
+  },
+  "gui_robot": {
+    "passed": true,
+    "seconds": 7.922
+  },
+  "gui_upper": {
+    "passed": true,
+    "seconds": 8.0
+  },
+  "model": {
+    "passed": true,
+    "seconds": 2.469
+  }
+}

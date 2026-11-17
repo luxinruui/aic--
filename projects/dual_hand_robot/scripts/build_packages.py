@@ -40,13 +40,13 @@ def main():
                 if path.suffix == ".py":
                     version = (3,8) if folder in ("robot_link","dual_link","dual_tests") else (3,10)
                     ast.parse(path.read_text(encoding="utf-8"),feature_version=version)
-    for name in ("README.md","README_NOMACHINE.md","arm_config.json","robot_config.json","requirements.txt",
+    for name in ("README.md","README_NOMACHINE.md","RUN_THIS_ROBOT.md","arm_config.json","robot_config.json","requirements.txt",
                  "requirements_backpack.txt","run_pc.cmd","run_dual_hand.cmd","run_robot.cmd","run_backpack.py",
                  "install_backpack.py","verify_backpack.py","start_preview.sh","start_robot.sh"):
         files[name] = (ROOT/name).read_bytes()
     backpack = {name:data for name,data in files.items() if name.split("/")[0] in
         ("robot_link","dual_link","dual_tests","offline_deps","docs") or name in
-        ("README.md","README_NOMACHINE.md","arm_config.json","robot_config.json","requirements_backpack.txt",
+        ("README.md","README_NOMACHINE.md","RUN_THIS_ROBOT.md","arm_config.json","robot_config.json","requirements_backpack.txt",
          "run_backpack.py","install_backpack.py","verify_backpack.py","start_preview.sh","start_robot.sh",
          "scripts/check_connection.py")}
     for name in ("run_backpack.py","install_backpack.py","verify_backpack.py","scripts/check_connection.py"):

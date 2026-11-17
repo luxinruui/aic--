@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-17T23:45:42.768907+08:00",
+  "input_source": "real_camera",
+  "camera": 0,
+  "source_log": "camera-20261117-234254-861258",
+  "images_recorded": false,
+  "streams": {
+    "commands.csv": {
+      "rows": 1315,
+      "enabled_rows": 0,
+      "latest_enabled": "False",
+      "nonzero_rows": 0
+    },
+    "upper_commands.csv": {
+      "rows": 1338,
+      "enabled_rows": 0,
+      "latest_enabled": "False"
+    }
+  },
+  "native_ui_observed": "Real live camera and Left skeleton; both mode selected through native ttk dropdown without callback failure; hardware DISARMED; both controllers OFF",
+  "arm_baseline_confirmed": false,
+  "physical_motion_tested": false
+}
