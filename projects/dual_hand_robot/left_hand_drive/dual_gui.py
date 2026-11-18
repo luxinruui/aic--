@@ -19,11 +19,13 @@ class RobotApp(App):
         self.profile = load(project)
         self.connection_window = None
         self.network_state = None
+        self.start_anywhere = True
+        self.execution_label = "未连接实机"
         super().__init__(root,project,demo,camera,upper=True)
         self.turn_gain.set(100)
         self.gains_changed()
         root.title("双手机器人联控 · 独立项目 v1.0")
-        self.subtitle.configure(text="独立背包联控 · 拇指联动双大臂 · 四指对称分组 · 空格全部暂停")
+        self.subtitle.configure(text="当前手势直接启用 · 平滑接管 · 拇指联动双大臂 · 空格全部暂停")
         self.mode_label.pack_forget()
         self.connection_bar = ttk.Frame(self.toolbar.master)
         self.connection_bar.pack(fill="x",after=self.toolbar,pady=(4,0))
@@ -63,26 +65,32 @@ class RobotApp(App):
         super().start_demo()
 
     def enable(self):
+        def blocked(reason):
+            self.stop(reason)
+            if self.log:
+                self.log.event("dual_enable_blocked",reason=reason)
         if self.client:
             status = self.client.status()
             if not status["connected"]:
-                self.stop("请先连接双手背包服务，或断开后使用本地预览")
+                blocked("请先连接双手背包服务，或断开后使用本地预览")
                 return
             if status["hardware"] and self.demo:
-                self.stop("实机拒绝合成演示，请使用摄像头")
+                blocked("实机拒绝合成演示，请使用摄像头")
                 return
             if self.upper_preview.required[1]:
                 if not status["baseline_confirmed"]:
-                    self.stop("背包尚未确认原工程的机器人基准")
+                    blocked("背包尚未确认机器人实际基准；虚拟示意不代表已下发")
                     return
                 try:
                     self.upper_preview.controller.set_reference(status["arm_reference"])
                 except ValueError as error:
-                    self.stop(str(error))
+                    blocked(str(error))
                     return
         else:
             self.upper_preview.controller.set_reference(None)
         super().enable()
+        if self.log:
+            self.log.event("dual_enable_requested",mode=MODE_NAMES[self.upper_preview.mode.get()],any_pose=True)
 
     def connect_robot(self, host, port=PORT):
         self.disconnect_robot()
@@ -97,6 +105,8 @@ class RobotApp(App):
         if self.client:
             self.client.close()
             self.client = None
+        self.execution_label = "未连接实机"
+        self.mode_label.configure(text="双手背包未连接 · 8770")
         if self.upper_preview:
             self.upper_preview.controller.set_reference(None)
 
@@ -131,11 +141,18 @@ class RobotApp(App):
         if self.client:
             status = self.client.status()
             if status["connected"]:
-                self.mode_label.configure(text=("实机" if status["hardware"] else "背包预览")+" · "+status["state"])
+                if status["hardware"]:
+                    self.execution_label = "实机已连接"
+                    self.mode_label.configure(text="实机 · %s · 上肢已下发%d段%s" %
+                        (status["state"],status.get("arm_segments",0)," · 基准未确认" if not status["baseline_confirmed"] else ""))
+                else:
+                    self.execution_label = "背包预览，不驱动实物"
+                    self.mode_label.configure(text="背包预览 · "+status["state"])
                 if status["inhibit"] or status["state"] in ("FAULT","CLOSED"):
                     if self.controller.state != "OFF" or self.upper_preview.controller.state != "OFF":
                         self.stop(status.get("error") or status.get("reason") or "背包暂停")
             else:
+                self.execution_label = "实机未连接，未下发"
                 self.mode_label.configure(text="连接中…" if status["state"] == "CONNECTING" else "双手背包已断开")
                 if self.controller.state != "OFF" or self.upper_preview.controller.state != "OFF":
                     self.stop(status.get("error") or "连接断开，请手动重新连接")

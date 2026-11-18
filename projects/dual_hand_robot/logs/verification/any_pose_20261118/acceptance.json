@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-18",
+  "source_commit_before_fix": "9810b2fbeff862c860dae114acc03fc6ed46d4a5",
+  "software": {"pc_tests": 51, "receiver_tests": 19, "passed": true, "real_tk_tcp_fake_uart": "arbitrary-hand startup and resume passed", "upper_gui": "passed", "model_check": "passed"},
+  "desktop_deployed": true,
+  "desktop_backup_suffix": "before_any_pose_20261118-002056",
+  "startup_hand_pose_matching_removed": true,
+  "first_arm_target": "last commanded robot reference; then ramp to current hand",
+  "robot_position_readback": false,
+  "baseline_tool_sha256": "58527a8e59911eead7b64eeaec75134e882d58074315fa8ebfc2001c38e99ef2",
+  "baseline_motion_approved": true,
+  "baseline_command_log": "logs/verification/baseline-command-20261118-134757.json on backpack",
+  "baseline_duration_ms": 5000,
+  "baseline_submitted_and_wait_completed": true,
+  "user_observed_baseline": "已移动，姿态基本正确",
+  "receiver_log": "logs/backpack/20261118-134925-513712.jsonl on backpack",
+  "hardware_off_check": "passed; 24 ACK; baseline confirmed; no new arm segments or nonzero chassis commands",
+  "current_field_test": "right hand / left elbow only, 0..20 degrees at 10 degrees/sec; manual enable; no automatic ON",
+  "user_observed_any_pose_hand_follow": "pending",
+  "images_recorded": false
+}

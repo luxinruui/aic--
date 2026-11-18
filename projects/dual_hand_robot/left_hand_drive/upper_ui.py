@@ -144,7 +144,8 @@ class UpperPreview:
                         cal = ArmCalibration(*(self.references[k] for k in ("neutral", "fist", "opened")))
                         self.controller.set_calibration(cal)
                         self.app.log.upper_calibration(cal)
-                        self.cal_status.set("右手校准完成；点击启用，回到①起始位保持0.5秒")
+                        self.cal_status.set("右手校准完成；点击启用即可从当前手势平滑开始" if getattr(self.app,"start_anywhere",False)
+                                            else "右手校准完成；点击启用，回到①起始位保持0.5秒")
                     else:
                         self.cal_status.set("右手参照已采集，请继续其余步骤")
                 except CalibrationError as error:
@@ -177,11 +178,11 @@ class UpperPreview:
             self.cal_status.set("请先完成所选模式需要的左手 / 右手校准")
             return
         if left:
-            app.controller.enable()
+            app.controller.enable(any_pose=getattr(app,"start_anywhere",False))
         else:
             app.controller.stop("当前模式仅预览上肢")
         if right:
-            self.controller.enable()
+            self.controller.enable(any_pose=getattr(app,"start_anywhere",False))
         else:
             self.controller.stop("当前模式仅预览底盘")
         app.root.focus_set()

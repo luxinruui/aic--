@@ -75,7 +75,6 @@ def main():
             features = extract_hand(hands,640,480,1,time.monotonic(),side="Right").fingers
             cal = ArmCalibration(*(PoseReference(tuple(v+d for v in features),0,"camera") for d in (-.2,-.4,0)))
             app.upper_preview.controller.set_calibration(cal)
-            app.enable()
             frame = 0
             def feed(hands):
                 nonlocal frame
@@ -83,13 +82,16 @@ def main():
                 now = time.monotonic()
                 worker.item = Sample(extract_left(hands,640,480,frame,now),np.zeros((480,640,3),dtype=np.uint8),hands)
                 pump(.06)
-            for _ in range(22):feed(hands)
-            assert app.upper_preview.controller.state == "ON",app.detail.get()
-            assert app.client.phase == "ACTIVE",app.client.status()
-            assert controller.issued_arm_segments == 0, "Matching initial pose must not move an arm"
             bent = list(hand_points())
             bent[8] = (bent[5][0],bent[5][1]-.01,0)
+            feed((("Right",.99,bent),))
+            assert controller.issued_arm_segments == 0
+            app.enable()
+            feed((("Right",.99,bent),))
+            assert app.upper_preview.controller.state == "ON",app.detail.get()
+            assert controller.issued_arm_segments == 0, "First takeover sample must hold the robot reference"
             for _ in range(22):feed((("Right",.99,bent),))
+            assert app.client.phase == "ACTIVE",app.client.status()
             assert controller.issued_arm_segments > 0,app.client.status()
             assert controller.positions["1"] > profile.positions["1"]
             assert controller.chassis.command == (0,0,0)
@@ -99,6 +101,17 @@ def main():
             count = controller.issued_arm_segments
             for _ in range(3):feed(hands)
             assert controller.issued_arm_segments == count
+            held = controller.positions["1"]
+            app.enable()  # Hand is open while the last robot command is bent.
+            feed(hands)
+            assert app.upper_preview.controller.state == "ON",app.detail.get()
+            assert controller.issued_arm_segments == count
+            for _ in range(22):feed(hands)
+            assert controller.issued_arm_segments > count
+            assert controller.positions["1"] < held
+            root.event_generate("<space>")
+            pump(.14)
+            count = controller.issued_arm_segments
             for error in (KeyError("popdown"), tk.TclError("focus window disappeared")):
                 with patch.object(root,"focus_get",side_effect=error):
                     app.check_focus()
@@ -110,7 +123,7 @@ def main():
             assert not failures,failures
             app.worker = None
             app.close_input()
-            print("Dual robot Tk + actual TCP + real encoder/FakeSerial passed: software reference takeover,")
+            print("Dual robot Tk + actual TCP + real encoder/FakeSerial passed: arbitrary-hand startup and resume,")
             print("right-only camera-shaped fixture, elbow movement, hardware-demo rejection and SPACE STOP.")
             print("Native popdown / disappearing focus safely pauses without stopping the polling loop.")
             print("No physical camera or UART used.")

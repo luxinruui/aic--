@@ -199,6 +199,7 @@ class Controller:
         self.last_seen_id = -1
         self.last_sampled_at = None
         self.forward_gain = self.turn_gain = .35
+        self.any_pose_start = False
         self.reset_filters()
 
     def reset_filters(self):
@@ -222,12 +223,14 @@ class Controller:
         self.stop("校准完成；点击启用并回到静止位")
         self.calibration = calibration
 
-    def enable(self):
+    def enable(self, any_pose=False):
         if self.calibration is None:
             self.stop("请先完成本次校准")
             return False
         self.reset_filters()
-        self.state, self.reason = "ARMING", "回到校准静止位并稳定保持0.4秒"
+        self.any_pose_start = bool(any_pose)
+        self.state = "ARMING"
+        self.reason = "等待新鲜左手采样，可从当前手势启用" if self.any_pose_start else "回到校准静止位并稳定保持0.4秒"
         return True
 
     def update(self, observation, now):
@@ -261,6 +264,10 @@ class Controller:
             self.stop("掌面倾斜超过75度，请回正后重新启用")
             return self.command(now)
         if self.state == "ARMING":
+            if self.any_pose_start:
+                # The transport still sends zero chassis preparation before ACTIVE.
+                self.state, self.reason = "ON", "已从当前左手姿势启用；握拳前进、展开后退、倾斜转向"
+                return self.command(now)
             self.reason = self.calibration.neutral_guidance(observation)
             if self.calibration.at_neutral(observation):
                 if self.neutral_since is None:

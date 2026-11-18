@@ -290,7 +290,8 @@ class App:
                         cal = Calibration(*(self.references[k] for k in ("neutral","fist","opened")))
                         self.controller.set_calibration(cal)
                         self.log.calibration(cal)
-                        self.cal_status.set("三步校准完成。点击启用，再回到静止位；握拳前进、展开后退")
+                        self.cal_status.set("三步校准完成。点击启用即可从当前手势开始；握拳前进、展开后退" if getattr(self,"start_anywhere",False)
+                                            else "三步校准完成。点击启用，再回到静止位；握拳前进、展开后退")
                     else:
                         self.cal_status.set("参照已采集，请继续下一步")
                 except CalibrationError as error:
@@ -429,7 +430,7 @@ class App:
         if self.upper_preview:
             panel = self.upper_preview
             self.status.set("上肢 %s · 底盘 %s%s" % (panel.controller.state, self.controller.state,
-                                                    " · 合成演示" if self.demo else " · 电脑预览"))
+                                                    " · 合成演示" if self.demo else " · "+getattr(self,"execution_label","电脑预览")))
             left, right = panel.required
             self.detail.set("左手：%s；右手：%s" % (command.reason, panel.controller.reason)
                             if left and right else panel.controller.reason if right else command.reason)

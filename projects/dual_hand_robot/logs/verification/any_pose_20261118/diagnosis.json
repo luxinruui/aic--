@@ -1,0 +1,10 @@
+{
+  "source_run": "camera-20261117-235641-494515",
+  "upper_enabled_rows": 0,
+  "arming_rows": 554,
+  "user_actual_pose": "unknown; user did nothing to initialize physical arms",
+  "observed_remote_baseline_flag": true,
+  "observed_remote_arm_segments": 0,
+  "cause": "Finger/reference matching did not complete; software robot baseline flag was not physical position feedback",
+  "baseline_tool_sha256": "58527a8e59911eead7b64eeaec75134e882d58074315fa8ebfc2001c38e99ef2"
+}

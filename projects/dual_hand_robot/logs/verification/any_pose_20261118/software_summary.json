@@ -1,0 +1,29 @@
+{
+  "pc_tests": {
+    "passed": true,
+    "seconds": 0.656
+  },
+  "receiver_tests": {
+    "passed": true,
+    "seconds": 2.172
+  },
+  "gui_robot": {
+    "passed": true,
+    "seconds": 7.906
+  },
+  "gui_upper": {
+    "passed": true,
+    "seconds": 6.734
+  },
+  "model": {
+    "passed": true,
+    "seconds": 2.047
+  },
+  "baseline_tool_regression": {
+    "passed": true,
+    "tests": 19,
+    "seconds": 1.816,
+    "log": "baseline_tool_check.txt",
+    "hardware": false
+  }
+}

@@ -42,14 +42,14 @@ def main():
                     ast.parse(path.read_text(encoding="utf-8"),feature_version=version)
     for name in ("README.md","README_NOMACHINE.md","RUN_THIS_ROBOT.md","arm_config.json","robot_config.json","requirements.txt",
                  "requirements_backpack.txt","run_pc.cmd","run_dual_hand.cmd","run_robot.cmd","run_backpack.py",
-                 "install_backpack.py","verify_backpack.py","start_preview.sh","start_robot.sh"):
+                 "install_backpack.py","verify_backpack.py","initialize_arms.py","start_preview.sh","start_robot.sh"):
         files[name] = (ROOT/name).read_bytes()
     backpack = {name:data for name,data in files.items() if name.split("/")[0] in
         ("robot_link","dual_link","dual_tests","offline_deps","docs") or name in
         ("README.md","README_NOMACHINE.md","RUN_THIS_ROBOT.md","arm_config.json","robot_config.json","requirements_backpack.txt",
-         "run_backpack.py","install_backpack.py","verify_backpack.py","start_preview.sh","start_robot.sh",
+         "run_backpack.py","install_backpack.py","verify_backpack.py","initialize_arms.py","start_preview.sh","start_robot.sh",
          "scripts/check_connection.py")}
-    for name in ("run_backpack.py","install_backpack.py","verify_backpack.py","scripts/check_connection.py"):
+    for name in ("run_backpack.py","install_backpack.py","verify_backpack.py","initialize_arms.py","scripts/check_connection.py"):
         ast.parse((ROOT/name).read_text(encoding="utf-8"),feature_version=(3,8))
     results = dict(pc=package("dual_hand_pc_v1_20261117.zip","dual_hand_robot_pc",files),
         backpack=package("dual_hand_backpack_v1_20261117.zip","aic_dual_hand_robot_20261117",backpack))

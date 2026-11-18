@@ -1,0 +1,3 @@
+Real Tk dual-hand smoke passed: three modes, right-only Sample, paired targets, pause clears table,
+single-finger calibration, camera failure, fresh-start calibration and responsive controls.
+Synthetic fixtures only; no camera, TCP, UART or robot used.

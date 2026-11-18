@@ -1,0 +1,4 @@
+Dual robot Tk + actual TCP + real encoder/FakeSerial passed: arbitrary-hand startup and resume,
+right-only camera-shaped fixture, elbow movement, hardware-demo rejection and SPACE STOP.
+Native popdown / disappearing focus safely pauses without stopping the polling loop.
+No physical camera or UART used.

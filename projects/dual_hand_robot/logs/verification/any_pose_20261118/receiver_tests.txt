@@ -1,0 +1,23 @@
+test_default_off_prepare_no_motion_and_target_matching (test_dual.GateAndMotionTests) ... ok
+test_duplicate_camera_frame_cannot_change_arm_goal (test_dual.GateAndMotionTests) ... ok
+test_hardware_arms_require_baseline_confirmation_and_camera_source (test_dual.GateAndMotionTests) ... ok
+test_only_selected_joint_slots_move_and_mode_change_requires_pause (test_dual.GateAndMotionTests) ... ok
+test_paired_raw_motion_limits_and_chassis_combination (test_dual.GateAndMotionTests) ... ok
+test_raw_elbow_acceleration_remains_bounded_across_middle_calibration_point (test_dual.GateAndMotionTests) ... ok
+test_timeout_disconnect_off_and_late_old_generation_stop_both (test_dual.GateAndMotionTests) ... ok
+test_actual_client_server_prepare_motion_and_off (test_dual.TcpTests) ... ok
+test_partial_tcp_message_cannot_block_independent_stop (test_dual.TcpTests) ... ok
+test_finger_flexion_reverses_the_old_elbow_internal_angle (test_dual.WireAndCalibrationTests) ... ok
+test_historical_golden_frame_and_fixed_waist_slots (test_dual.WireAndCalibrationTests) ... ok
+test_partial_uart_write_latches_and_never_retries_motion (test_dual.WireAndCalibrationTests) ... ok
+test_preview_and_import_do_not_load_serial_or_open_uart (test_dual.WireAndCalibrationTests) ... ok
+test_protocol_rejects_legacy_asymmetric_partial_or_inactive_targets (test_dual.WireAndCalibrationTests) ... ok
+test_uart_is_opened_once_8e1_and_startup_never_sends_arm_positions (test_dual.WireAndCalibrationTests) ... ok
+test_corrupted_transfer_rejected_before_creating_destination (test_import.ImportTests) ... ok
+test_import_refuses_existing_destination_and_leaves_old_project_untouched (test_import.ImportTests) ... ok
+test_manifest_cannot_escape_the_new_project (test_import.ImportTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.799s
+
+OK

@@ -43,6 +43,19 @@ def intent(profile, message, now=100):
 class WireAndCalibrationTests(unittest.TestCase):
     def setUp(self): self.profile = load(ROOT)
 
+    def test_explicit_baseline_tool_encodes_one_slow_measured_pose_with_waist_hold(self):
+        import initialize_arms
+        data = initialize_arms.frame(self.profile)
+        self.assertEqual(struct.unpack('<11H',data[5:-1]),(926,2048,2256,1569,0,0,3110,2048,2224,2040,5000))
+        self.assertEqual(data[:5],bytes.fromhex('f55f075f16'))
+        self.assertEqual(sum(data[2:]) & 255,255)
+        from contextlib import redirect_stdout
+        import io
+        with patch('dual_link.bus.Bus') as bus, redirect_stdout(io.StringIO()) as output:
+            self.assertEqual(initialize_arms.main([]),0)
+            bus.assert_not_called()
+            self.assertIn('CHECK ONLY',output.getvalue())
+
     def test_historical_golden_frame_and_fixed_waist_slots(self):
         positions = {"1":2018,"3":2256,"4":1569,"31":1897,"33":2224,"34":2040}
         evidence = json.loads((ROOT/"docs/reference/aic_six_axis_evidence.json").read_text(encoding="utf-8"))

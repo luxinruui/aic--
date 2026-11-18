@@ -98,6 +98,7 @@ class ArmController:
         self.inputs = self.anchor = None
         self.neutral_since = None
         self.reference_inputs = None
+        self.any_pose_start = False
 
     def stop(self, reason="上肢已暂停，请重新启用"):
         self.state, self.reason = "OFF", reason
@@ -124,13 +125,16 @@ class ArmController:
         self.stop("右手校准完成，点击启用并回到起始位")
         self.calibration = calibration
 
-    def enable(self):
+    def enable(self, any_pose=False):
         if self.calibration is None:
             self.stop("请先完成右手三步校准")
             return False
         self.stop()
+        self.any_pose_start = bool(any_pose)
         self.state = "ARMING"
-        self.reason = "匹配背包软件参考姿态并保持0.5秒；首次通常需五指展开" if self.reference_inputs is not None else "右手回到起始位并稳定保持0.5秒"
+        self.reason = ("等待新鲜右手采样，从当前手势平滑接管，无须回起始位" if self.any_pose_start else
+                       "匹配背包软件参考姿态并保持0.5秒；首次通常需五指展开" if self.reference_inputs is not None else
+                       "右手回到起始位并稳定保持0.5秒")
         return True
 
     def set_reference(self, reference):
@@ -180,6 +184,13 @@ class ArmController:
             return self.command(now)
         values = self.calibration.normalized(o.fingers)
         if self.state == "ARMING":
+            if self.any_pose_start:
+                # Start at the last commanded robot pose, then ramp toward the
+                # hand. Human fingers never have to reproduce that robot pose.
+                self.inputs = tuple(self.reference_inputs if self.reference_inputs is not None else values)
+                self.anchor = tuple(values)
+                self.state, self.reason = "ON", "已从当前右手姿势启用，正在平滑跟随"
+                return self.command(now)
             neutral = self.reference_inputs if self.reference_inputs is not None else self.calibration.normalized(self.calibration.neutral.fingers)
             differences = [abs(a-b) if active else 0 for a,b,active in zip(values,neutral,self.settings.active)]
             if max(differences) <= (.025 if self.reference_inputs is not None else .22):
