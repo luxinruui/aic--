@@ -420,9 +420,7 @@ class App:
             if self.log and self.upper_preview:
                 self.log.record_upper(self.upper_preview.controller.command(now))
         except OSError as error:
-            self.controller.stop("日志/输出文件写入失败："+str(error))
-            if self.upper_preview:
-                self.upper_preview.stop(self.controller.reason)
+            self.stop("日志/输出文件写入失败："+str(error))
             command=self.controller.command(now)
         label={"FIST":"握拳 / 前进", "OPEN":"展开 / 后退", "NEUTRAL":"静止 / 过渡手势"}[command.gesture]
         self.status.set("%s%s · %s%s" % ("底盘 " if self.upper_preview else "",self.controller.state,label," · 合成演示" if self.demo else ""))

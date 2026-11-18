@@ -36,8 +36,8 @@ class RobotApp(App):
         root.after(50,self.poll_network)
 
     def write_snapshot(self, command):
-        super().write_snapshot(command)
         if not self.client:
+            super().write_snapshot(command)
             return
         upper = self.upper_preview.controller.command(command.produced_at)
         mode = MODE_NAMES[self.upper_preview.mode.get()]
@@ -46,13 +46,22 @@ class RobotApp(App):
         enabled = valid and all(x.enabled for x in branches)
         source = branches[0].source
         valid = valid and all(x.source == source and x.frame_id == branches[0].frame_id for x in branches)
-        self.client.publish(dict(session=self.input_session, produced_at=command.produced_at,
+        snapshot = dict(session=self.input_session, produced_at=command.produced_at,
             enabled=enabled and valid, input_valid=valid, sample_age_ms=max(x.sample_age_ms for x in branches),
             frame_id=branches[0].frame_id, source=source, mode=mode,
             forward=command.forward if enabled and mode != "arms" else 0.,
             yaw_left=command.yaw_left if enabled and mode != "arms" else 0.,
             targets=upper.targets if enabled and mode != "chassis" else dict.fromkeys(AXES),
-            groups=list(upper.active_groups) if mode != "chassis" else [False]*5))
+            groups=list(upper.active_groups) if mode != "chassis" else [False]*5)
+        # Give the independent network thread the current command before disk
+        # snapshots, whose atomic rename can stall under Windows file scanning.
+        self.client.publish(snapshot)
+        try:
+            super().write_snapshot(command)
+        except OSError:
+            self.client.publish(dict(snapshot,enabled=False,input_valid=False,
+                                     forward=0.,yaw_left=0.,targets=dict.fromkeys(AXES)))
+            raise
 
     def close_input(self):
         super().close_input()

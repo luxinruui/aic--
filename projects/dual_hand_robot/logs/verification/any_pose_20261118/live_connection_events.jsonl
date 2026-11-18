@@ -1,0 +1,45 @@
+{"at": "2026-11-18T13:50:07.242333+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "DISARMED", "reason": "电脑暂停", "error": ""}
+{"at": "2026-11-18T13:57:38.415979+08:00", "event": "dual_enable_requested", "mode": "arms", "any_pose": true}
+{"at": "2026-11-18T13:57:38.429794+08:00", "event": "upper_state", "state": "ON", "enabled": true, "reason": "已从当前右手姿势启用，正在平滑跟随"}
+{"at": "2026-11-18T13:57:38.478637+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": ""}
+{"at": "2026-11-18T13:57:39.520668+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": ""}
+{"at": "2026-11-18T13:57:39.727815+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": ""}
+{"at": "2026-11-18T13:57:40.484047+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": ""}
+{"at": "2026-11-18T13:57:42.684760+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "DISARMED", "reason": "电脑暂停", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:19.770002+08:00", "event": "dual_enable_requested", "mode": "arms", "any_pose": true}
+{"at": "2026-11-18T14:03:19.799333+08:00", "event": "upper_state", "state": "ON", "enabled": true, "reason": "已从当前右手姿势启用，正在平滑跟随"}
+{"at": "2026-11-18T14:03:19.881385+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:20.157743+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:20.282117+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:20.419682+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:22.471286+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:22.536702+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:28.313253+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:28.375681+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:28.507080+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:28.572101+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:34.055309+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:34.118513+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:35.742903+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:35.804960+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:36.999376+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.060182+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.123177+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.199430+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.275963+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.466969+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.532012+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.594345+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.659148+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.785198+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.853726+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.920170+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:37.983605+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:38.111274+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:41.754459+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:41.886684+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:41.950767+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:42.014902+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:42.150217+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "READY", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:42.214242+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "MOVING", "reason": "已就绪，等待手势", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}
+{"at": "2026-11-18T14:03:44.015055+08:00", "event": "dual_robot_state", "connected": true, "hardware": true, "state": "DISARMED", "reason": "电脑暂停", "error": "电脑窗口快照超过150毫秒，请暂停后重新启用"}

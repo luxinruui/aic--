@@ -1,7 +1,12 @@
 {
   "date": "2026-11-18",
   "source_commit_before_fix": "9810b2fbeff862c860dae114acc03fc6ed46d4a5",
-  "software": {"pc_tests": 51, "receiver_tests": 19, "passed": true, "real_tk_tcp_fake_uart": "arbitrary-hand startup and resume passed", "upper_gui": "passed", "model_check": "passed"},
+  "software": {
+    "pc_tests": 53,
+    "receiver_tests": 19,
+    "passed": true,
+    "gui_tcp_fake_uart": "arbitrary startup/resume passed; final transmit-priority GUI regression delegated to same-commit CI"
+  },
   "desktop_deployed": true,
   "desktop_backup_suffix": "before_any_pose_20261118-002056",
   "startup_hand_pose_matching_removed": true,
@@ -16,6 +21,15 @@
   "receiver_log": "logs/backpack/20261118-134925-513712.jsonl on backpack",
   "hardware_off_check": "passed; 24 ACK; baseline confirmed; no new arm segments or nonzero chassis commands",
   "current_field_test": "right hand / left elbow only, 0..20 degrees at 10 degrees/sec; manual enable; no automatic ON",
-  "user_observed_any_pose_hand_follow": "pending",
-  "images_recorded": false
+  "user_observed_any_pose_hand_follow": "passed: 直接到ON; full-fist retest user confirmed 有明显弯伸",
+  "images_recorded": false,
+  "snapshot_at": "2026-11-18T14:06:05.778975+08:00",
+  "source_camera_run": "camera-20261118-135006-618936",
+  "source_csv_sha256": "2daca8c9054e789fd97862bfdb2d90939bdfd33139c66772357466003005b862",
+  "enabled_samples": 207,
+  "peak_elbow_target_deg": 19.999980581133347,
+  "first_partial_test": "ON, 26 UART segments, peak target 3.61695 degrees, user did not perceive movement",
+  "final_state": "OFF",
+  "final_configuration": "Default six-axis groups/ranges restored after successful real left-elbow test; starts OFF",
+  "transmit_priority": "Network publish precedes disk IO; disk IO error publishes OFF immediately; TTL unchanged"
 }
